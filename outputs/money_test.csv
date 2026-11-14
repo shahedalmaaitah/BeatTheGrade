@@ -1,0 +1,9 @@
+grade,Default %: all loans,Default %: safest half,Default %: riskiest half,Return %: all loans,Return %: safest half
+A,5.4,4.0,6.8,6.7,7.2
+B,11.9,9.5,14.3,7.3,8.2
+C,19.4,16.0,22.9,6.6,8.0
+D,26.2,22.1,30.4,5.5,7.4
+E,32.8,28.8,36.9,3.2,5.5
+F,42.4,38.3,46.5,0.3,2.8
+G,46.1,39.5,52.9,-3.4,3.7
+All grades,14.9,12.2,17.6,6.6,7.7

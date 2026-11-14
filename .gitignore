@@ -1,0 +1,17 @@
+# The LendingClub data is 1.6 GB. GitHub rejects files over 100 MB, so never commit it.
+data/*
+!data/.gitkeep
+
+# Secrets: your Gemini API key lives here
+.env
+
+# Python environment and caches
+.venv/
+venv/
+__pycache__/
+.ipynb_checkpoints/
+*.pyc
+
+# Gradio's temporary files
+.gradio/
+flagged/

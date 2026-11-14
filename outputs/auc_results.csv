@@ -1,0 +1,5 @@
+,AUC on 2015 loans
+LendingClub sub-grade (baseline),0.679
+LendingClub interest rate (baseline),0.678
+Gradient boosting,0.669
+Logistic regression,0.655
