@@ -1,0 +1,8 @@
+,Main version,No-hindsight version,Same-size check
+Training years,2007-2014,2007-2011,2007-2014 (random sample)
+Training loans,"335,558","29,096","29,096"
+2015 AUC,0.669,0.631,0.650
+Within-sub-grade AUC,0.583,0.546,0.567
+Safest half default %,12.2,13.6,12.7
+Riskiest half default %,17.6,16.2,17.1
+Gap (points),5.4,2.7,4.4
