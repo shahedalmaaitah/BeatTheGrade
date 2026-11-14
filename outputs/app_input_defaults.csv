@@ -1,0 +1,16 @@
+field,default,low,high
+loan_amnt,10000.0,1500.0,35000.0
+fico,687.0,662.0,797.0
+annual_inc,62000.0,17000.0,260000.0
+dti,17.87,2.19,38.22
+revol_bal,10623.0,351.0,100969.5
+revol_util,52.2,2.4,98.8
+open_acc,11.0,3.0,29.0
+total_acc,23.0,5.0,60.0
+delinq_2yrs,0.0,0.0,4.0
+inq_last_6mths,0.0,0.0,4.0
+pub_rec,0.0,0.0,3.0
+emp_years,6.0,0.0,10.0
+credit_history_years,14.99794661190965,3.756331279945243,40.747433264887064
+home_ownership,MORTGAGE,,
+purpose,debt_consolidation,,

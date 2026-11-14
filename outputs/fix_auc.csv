@@ -1,0 +1,9 @@
+ranker,AUC,low,high,smallest_detectable
+A: no job title,0.6628,0.6055,0.7183,
+B: job title,0.6633,0.6035,0.7215,
+C: title + evidence,0.6777,0.6191,0.7373,
+LendingClub sub-grade,0.6954,0.6394,0.7513,
+difference C - A,0.0149,-0.0446,0.0726,0.0833
+difference C - B,0.0144,-0.0459,0.0737,0.0864
+difference B - A,0.0005,-0.0211,0.0218,0.0318
+difference C - LendingClub sub-grade,-0.0177,-0.0895,0.0556,0.103
