@@ -57,3 +57,52 @@ The trade is made concrete with the notebook 06 money method. For each title we 
 ## Limitations stated in advance
 
 The test covers one model and one prompt, one run per condition, 600 loans, about 90 defaults and 12 titles. The evidence is a summary table, not individual records. Any improvement could come from the AI copying the table rather than reasoning; the president and mechanic titles, where the evidence is wrong for 2015, help show which.
+
+---
+
+## Addendum: Condition D, evidence with reliability
+
+**Date:** 14 November 2026
+
+**Written before any condition D results were collected.** Conditions A–C had already been run, so D is a follow-up designed after seeing them: C moved Gemini's job-title pattern toward 2015 reality, but it largely copied the evidence table, including for president, where the table was wrong for 2015. Nothing above this line has been changed.
+
+### A data note found while designing D
+
+Before late 2013, LendingClub's `emp_title` field held the **employer's name** (for example "us army" or "walmart"), not the job title. The 12 titles have 0 loans in 2007–2011, 2 in 2012 and 2,070 in 2013 (2,067 of them in Q4). So the "2007–2014" evidence used in C, and here, actually comes from **June 2012 to December 2014**, almost all from Q4 2013 onward, about 15,500 loans. The filter was still "issued before 2015", so nothing from 2015 leaks in.
+
+### Question
+
+If the evidence also says how reliable each number is, and the AI is told to give less weight to uncertain or unstable evidence, does its job-title pattern get closer to 2015 reality than with the plain evidence (C)?
+
+### Evidence D
+
+The same 12 titles and the same gaps as C, computed from loans issued before 2015 only. Each line adds two things:
+
+- **The gap's 95% interval:** a bootstrap of that title's loans, 2,000 resamples, fixed seed.
+- **A stability flag:** "stable" if the gap has the same sign in both halves of the evidence period, otherwise "unstable". The halves are split at the median issue date: **June 2012 – June 2014** against **July – December 2014**, about 7,700 loans each. (The originally planned split, 2007–2011 against 2012–2014, is impossible, because 2007–2011 has no job titles.)
+
+The prompt adds one instruction: **"Give less weight to evidence that is uncertain or marked unstable."** The exact text is in `prompts/evidence_reliability.txt`, committed with this addendum.
+
+**Known in advance from the evidence itself:**
+- **Mechanic** is flagged **unstable** and has a wide interval (−2.0 to +3.8), so D should give it less weight.
+- **President** comes out **stable**, with an interval that barely excludes zero (−4.2 to −0.0). Its evidence still points the wrong way for 2015 (−2.1 before, +1.4 in 2015), so **D may still follow the wrong evidence for president.**
+- The other 10 titles are flagged stable.
+
+### Design
+
+The same 600 loans and the same batch plan as A–C, with the **job title shown**, `gemini-3.5-flash-lite` with default settings, and the plain prompt plus the reliability evidence block. This is one run, `fix_D`, of 24 requests, scored with the same safety code.
+
+### Main rule
+
+**D beats C** only if the paired bootstrap interval for **distance D − C lies entirely below zero**. Distance is defined as in the main measure above: the mean absolute gap between the AI's title pattern and the 2015 real gaps, both centred, with loans resampled within each title 2,000 times on the same resamples as A–C. If the interval lies entirely above zero, D is reported as **worse than C**. Otherwise the result is **"no detectable difference"**.
+
+### Also reported
+
+- **D's slope and rank correlation** against 2015 reality, with intervals. D is labelled **"over-corrects"** if its slope interval lies entirely above 1.
+- **The president and mechanic shifts:** D − A against C − A on the same loans, with intervals.
+- **AUC** for D, with the paired differences D − C and D − A, next to the sub-grade on the same loans.
+- **The money spread** for D − A (notebook 06 method), next to C − A and 2015 reality.
+
+### Limitations stated in advance
+
+D was designed after seeing A–C. It is one run, compared with a C run made earlier in the day, so model updates or run-to-run noise could affect the comparison; the model version reported in each reply is recorded and compared. With 12 titles and 50 loans each, a difference between C and D has to be fairly large to be detected.
