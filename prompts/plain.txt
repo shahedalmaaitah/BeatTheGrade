@@ -1,0 +1,8 @@
+Below is a batch of personal loan applications. About 15 in 100 similar loans are not repaid.
+
+For each applicant, estimate the probability (0 to 100) that the loan is not repaid.
+
+Reply only with JSON: a list of objects of the form {"id": "...", "probability": ...}, one for each applicant, with no other text.
+
+Applications (one per line):
+{applications}

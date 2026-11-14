@@ -1,0 +1,561 @@
+version_id,app_id,condition,main_1,batch_main_1,main_2,batch_main_2
+A01_software_engineer,A01,software engineer,10.0,21,10.0,18
+A01_police_officer,A01,police officer,12.0,12,11.0,3
+A01_executive_assistant,A01,executive assistant,12.0,15,11.0,13
+A01_attorney,A01,attorney,9.0,10,11.0,19
+A01_teacher,A01,teacher,10.0,19,11.0,9
+A01_registered_nurse,A01,registered nurse,10.0,8,9.0,2
+A01_mechanic,A01,mechanic,9.5,22,11.0,14
+A01_president,A01,president,12.0,20,12.0,22
+A01_general_manager,A01,general manager,11.0,2,10.0,12
+A01_owner,A01,owner,12.0,4,11.0,17
+A01_truck_driver,A01,truck driver,10.0,3,9.0,7
+A01_server,A01,server,10.0,11,10.0,16
+A01_blank,A01,(blank),9.0,23,12.0,23
+A01_employee,A01,employee,10.5,7,11.0,8
+A02_software_engineer,A02,software engineer,4.0,13,5.0,4
+A02_police_officer,A02,police officer,5.0,19,5.0,20
+A02_executive_assistant,A02,executive assistant,4.5,22,4.0,1
+A02_attorney,A02,attorney,4.0,17,5.0,22
+A02_teacher,A02,teacher,5.0,4,5.0,6
+A02_registered_nurse,A02,registered nurse,4.0,1,6.0,17
+A02_mechanic,A02,mechanic,3.2,7,5.0,9
+A02_president,A02,president,4.0,9,3.0,3
+A02_general_manager,A02,general manager,4.0,12,4.0,5
+A02_owner,A02,owner,4.0,18,3.0,11
+A02_truck_driver,A02,truck driver,4.0,8,4.0,18
+A02_server,A02,server,5.0,2,5.0,10
+A02_blank,A02,(blank),4.0,3,5.0,15
+A02_employee,A02,employee,5.0,16,4.0,12
+A03_software_engineer,A03,software engineer,9.0,8,9.0,8
+A03_police_officer,A03,police officer,8.0,18,9.0,20
+A03_executive_assistant,A03,executive assistant,9.0,13,8.0,14
+A03_attorney,A03,attorney,10.0,15,8.0,21
+A03_teacher,A03,teacher,8.0,1,9.0,17
+A03_registered_nurse,A03,registered nurse,8.5,5,9.0,23
+A03_mechanic,A03,mechanic,7.0,14,8.0,12
+A03_president,A03,president,10.8,6,9.0,3
+A03_general_manager,A03,general manager,10.0,4,10.0,19
+A03_owner,A03,owner,7.1,7,10.0,22
+A03_truck_driver,A03,truck driver,10.0,12,9.0,18
+A03_server,A03,server,9.0,16,9.0,5
+A03_blank,A03,(blank),10.0,9,8.0,11
+A03_employee,A03,employee,10.0,17,10.0,10
+A04_software_engineer,A04,software engineer,14.0,23,18.0,23
+A04_police_officer,A04,police officer,17.0,8,16.0,16
+A04_executive_assistant,A04,executive assistant,18.0,12,18.0,12
+A04_attorney,A04,attorney,16.0,19,18.0,13
+A04_teacher,A04,teacher,17.0,18,17.0,1
+A04_registered_nurse,A04,registered nurse,18.0,16,19.0,8
+A04_mechanic,A04,mechanic,15.0,10,18.0,20
+A04_president,A04,president,16.0,15,22.0,19
+A04_general_manager,A04,general manager,16.0,13,17.0,9
+A04_owner,A04,owner,15.0,21,18.0,17
+A04_truck_driver,A04,truck driver,17.0,14,16.0,2
+A04_server,A04,server,15.0,22,15.0,21
+A04_blank,A04,(blank),17.0,4,17.0,5
+A04_employee,A04,employee,15.0,5,15.0,4
+A05_software_engineer,A05,software engineer,15.0,18,14.0,9
+A05_police_officer,A05,police officer,19.7,6,17.0,4
+A05_executive_assistant,A05,executive assistant,18.0,19,19.0,15
+A05_attorney,A05,attorney,16.0,1,17.0,2
+A05_teacher,A05,teacher,17.0,9,19.0,16
+A05_registered_nurse,A05,registered nurse,17.0,23,18.0,6
+A05_mechanic,A05,mechanic,22.0,20,22.0,22
+A05_president,A05,president,25.0,3,22.0,14
+A05_general_manager,A05,general manager,23.0,14,23.0,1
+A05_owner,A05,owner,22.0,11,18.0,18
+A05_truck_driver,A05,truck driver,18.0,2,24.0,3
+A05_server,A05,server,19.0,17,16.0,20
+A05_blank,A05,(blank),18.5,5,16.0,21
+A05_employee,A05,employee,18.5,22,20.0,19
+A06_software_engineer,A06,software engineer,6.0,20,7.0,17
+A06_police_officer,A06,police officer,5.0,3,5.0,11
+A06_executive_assistant,A06,executive assistant,5.0,17,6.0,6
+A06_attorney,A06,attorney,5.0,13,6.5,16
+A06_teacher,A06,teacher,6.0,12,5.0,19
+A06_registered_nurse,A06,registered nurse,4.5,7,5.0,5
+A06_mechanic,A06,mechanic,6.0,9,5.0,1
+A06_president,A06,president,5.0,1,6.5,7
+A06_general_manager,A06,general manager,6.0,16,7.0,13
+A06_owner,A06,owner,7.0,2,6.0,2
+A06_truck_driver,A06,truck driver,4.0,14,5.0,12
+A06_server,A06,server,7.0,23,6.0,8
+A06_blank,A06,(blank),4.5,10,7.0,23
+A06_employee,A06,employee,7.0,15,6.0,22
+A07_software_engineer,A07,software engineer,16.0,17,16.0,11
+A07_police_officer,A07,police officer,18.0,15,13.0,8
+A07_executive_assistant,A07,executive assistant,11.0,20,13.0,10
+A07_attorney,A07,attorney,17.5,22,13.0,2
+A07_teacher,A07,teacher,12.0,23,10.0,20
+A07_registered_nurse,A07,registered nurse,17.0,4,18.0,5
+A07_mechanic,A07,mechanic,11.0,16,15.0,7
+A07_president,A07,president,12.0,11,19.0,23
+A07_general_manager,A07,general manager,14.0,18,13.0,4
+A07_owner,A07,owner,14.5,10,14.0,22
+A07_truck_driver,A07,truck driver,16.0,5,17.0,15
+A07_server,A07,server,17.0,21,20.0,14
+A07_blank,A07,(blank),14.1,6,15.0,6
+A07_employee,A07,employee,18.0,14,18.0,19
+A08_software_engineer,A08,software engineer,9.5,10,13.0,23
+A08_police_officer,A08,police officer,11.0,11,13.0,17
+A08_executive_assistant,A08,executive assistant,9.8,7,11.0,12
+A08_attorney,A08,attorney,12.0,5,13.0,18
+A08_teacher,A08,teacher,12.5,6,11.0,11
+A08_registered_nurse,A08,registered nurse,13.0,19,12.0,8
+A08_mechanic,A08,mechanic,13.0,15,11.0,4
+A08_president,A08,president,13.0,21,15.0,5
+A08_general_manager,A08,general manager,12.0,3,15.0,9
+A08_owner,A08,owner,10.0,8,14.0,13
+A08_truck_driver,A08,truck driver,10.0,13,10.0,21
+A08_server,A08,server,10.0,14,12.0,10
+A08_blank,A08,(blank),15.0,2,12.5,7
+A08_employee,A08,employee,12.0,9,13.0,15
+A09_software_engineer,A09,software engineer,14.0,1,14.5,7
+A09_police_officer,A09,police officer,16.0,2,16.0,6
+A09_executive_assistant,A09,executive assistant,15.0,10,15.0,3
+A09_attorney,A09,attorney,14.0,3,13.0,16
+A09_teacher,A09,teacher,14.0,11,15.0,15
+A09_registered_nurse,A09,registered nurse,15.6,6,15.0,14
+A09_mechanic,A09,mechanic,16.0,12,16.0,18
+A09_president,A09,president,18.0,17,12.0,21
+A09_general_manager,A09,general manager,13.0,9,15.0,11
+A09_owner,A09,owner,17.0,16,15.0,10
+A09_truck_driver,A09,truck driver,14.1,7,16.0,8
+A09_server,A09,server,14.0,20,17.0,13
+A09_blank,A09,(blank),15.0,21,16.0,22
+A09_employee,A09,employee,12.0,13,16.0,1
+A10_software_engineer,A10,software engineer,12.0,23,20.0,3
+A10_police_officer,A10,police officer,14.0,11,14.0,15
+A10_executive_assistant,A10,executive assistant,14.0,8,14.0,10
+A10_attorney,A10,attorney,14.8,7,15.0,13
+A10_teacher,A10,teacher,15.0,19,14.0,20
+A10_registered_nurse,A10,registered nurse,15.0,18,13.0,14
+A10_mechanic,A10,mechanic,15.0,3,13.0,4
+A10_president,A10,president,14.0,20,17.5,16
+A10_general_manager,A10,general manager,13.0,22,15.0,6
+A10_owner,A10,owner,12.0,1,13.0,7
+A10_truck_driver,A10,truck driver,14.0,21,18.0,1
+A10_server,A10,server,15.0,4,15.0,2
+A10_blank,A10,(blank),14.0,5,16.0,9
+A10_employee,A10,employee,14.2,6,13.0,21
+B01_software_engineer,B01,software engineer,19.0,12,19.0,14
+B01_police_officer,B01,police officer,16.0,1,17.0,18
+B01_executive_assistant,B01,executive assistant,19.0,4,18.0,11
+B01_attorney,B01,attorney,22.0,2,21.0,23
+B01_teacher,B01,teacher,17.0,21,18.0,17
+B01_registered_nurse,B01,registered nurse,16.5,19,20.0,3
+B01_mechanic,B01,mechanic,14.0,9,17.0,22
+B01_president,B01,president,16.0,23,16.0,2
+B01_general_manager,B01,general manager,19.0,16,18.0,8
+B01_owner,B01,owner,22.0,3,18.0,15
+B01_truck_driver,B01,truck driver,17.0,8,17.0,9
+B01_server,B01,server,15.6,7,20.0,5
+B01_blank,B01,(blank),16.0,13,17.0,12
+B01_employee,B01,employee,15.5,10,14.0,21
+B02_software_engineer,B02,software engineer,23.0,16,23.0,10
+B02_police_officer,B02,police officer,22.0,5,25.0,15
+B02_executive_assistant,B02,executive assistant,18.0,9,21.0,20
+B02_attorney,B02,attorney,19.3,6,21.0,3
+B02_teacher,B02,teacher,22.0,15,21.0,7
+B02_registered_nurse,B02,registered nurse,21.0,8,20.0,1
+B02_mechanic,B02,mechanic,18.0,18,19.0,6
+B02_president,B02,president,26.0,4,24.0,8
+B02_general_manager,B02,general manager,19.0,13,21.0,18
+B02_owner,B02,owner,19.8,7,17.0,4
+B02_truck_driver,B02,truck driver,16.0,17,15.0,21
+B02_server,B02,server,17.0,10,20.0,19
+B02_blank,B02,(blank),20.0,12,22.0,13
+B02_employee,B02,employee,21.0,14,19.0,16
+B03_software_engineer,B03,software engineer,25.0,2,24.0,14
+B03_police_officer,B03,police officer,22.0,19,23.0,3
+B03_executive_assistant,B03,executive assistant,25.0,21,21.0,16
+B03_attorney,B03,attorney,19.0,22,21.0,15
+B03_teacher,B03,teacher,18.0,1,26.0,1
+B03_registered_nurse,B03,registered nurse,20.0,15,20.0,9
+B03_mechanic,B03,mechanic,18.0,23,25.0,11
+B03_president,B03,president,24.0,8,25.0,22
+B03_general_manager,B03,general manager,25.0,14,22.0,21
+B03_owner,B03,owner,23.0,11,22.0,20
+B03_truck_driver,B03,truck driver,24.0,7,22.0,4
+B03_server,B03,server,31.0,3,26.0,18
+B03_blank,B03,(blank),28.0,20,23.0,13
+B03_employee,B03,employee,18.0,9,22.0,7
+B04_software_engineer,B04,software engineer,16.0,4,15.0,22
+B04_police_officer,B04,police officer,12.5,10,14.0,21
+B04_executive_assistant,B04,executive assistant,13.0,5,15.0,13
+B04_attorney,B04,attorney,15.0,2,14.0,11
+B04_teacher,B04,teacher,15.0,11,14.0,5
+B04_registered_nurse,B04,registered nurse,15.0,17,18.0,19
+B04_mechanic,B04,mechanic,15.0,23,16.0,17
+B04_president,B04,president,16.0,16,18.0,2
+B04_general_manager,B04,general manager,14.0,19,14.0,18
+B04_owner,B04,owner,18.0,1,16.0,6
+B04_truck_driver,B04,truck driver,16.0,12,15.0,23
+B04_server,B04,server,13.0,18,14.0,7
+B04_blank,B04,(blank),16.0,20,13.5,16
+B04_employee,B04,employee,22.0,3,15.0,8
+B05_software_engineer,B05,software engineer,15.0,17,20.0,8
+B05_police_officer,B05,police officer,22.0,12,17.0,13
+B05_executive_assistant,B05,executive assistant,20.0,21,22.0,5
+B05_attorney,B05,attorney,18.0,18,21.0,14
+B05_teacher,B05,teacher,19.5,22,19.0,3
+B05_registered_nurse,B05,registered nurse,19.0,5,16.0,10
+B05_mechanic,B05,mechanic,22.0,14,18.0,16
+B05_president,B05,president,18.0,11,18.5,7
+B05_general_manager,B05,general manager,17.8,7,18.0,2
+B05_owner,B05,owner,22.0,2,22.0,19
+B05_truck_driver,B05,truck driver,16.0,15,16.0,6
+B05_server,B05,server,16.0,9,18.0,4
+B05_blank,B05,(blank),17.5,6,20.0,20
+B05_employee,B05,employee,19.0,8,21.0,1
+B06_software_engineer,B06,software engineer,21.0,10,23.0,12
+B06_police_officer,B06,police officer,22.0,20,22.0,8
+B06_executive_assistant,B06,executive assistant,21.0,5,22.0,17
+B06_attorney,B06,attorney,20.0,13,25.0,10
+B06_teacher,B06,teacher,26.0,3,23.0,22
+B06_registered_nurse,B06,registered nurse,24.0,15,21.0,21
+B06_mechanic,B06,mechanic,28.0,4,25.0,18
+B06_president,B06,president,21.0,22,28.0,1
+B06_general_manager,B06,general manager,26.0,1,25.0,23
+B06_owner,B06,owner,23.0,18,22.0,16
+B06_truck_driver,B06,truck driver,24.0,16,25.0,19
+B06_server,B06,server,19.0,19,23.0,15
+B06_blank,B06,(blank),24.0,17,21.0,4
+B06_employee,B06,employee,21.0,23,26.0,11
+B07_software_engineer,B07,software engineer,8.0,14,8.0,2
+B07_police_officer,B07,police officer,9.5,6,9.0,6
+B07_executive_assistant,B07,executive assistant,8.0,13,9.0,20
+B07_attorney,B07,attorney,9.0,1,10.0,5
+B07_teacher,B07,teacher,8.0,21,9.0,10
+B07_registered_nurse,B07,registered nurse,8.0,10,9.0,1
+B07_mechanic,B07,mechanic,8.0,8,10.0,14
+B07_president,B07,president,10.0,16,9.0,9
+B07_general_manager,B07,general manager,10.0,12,9.0,4
+B07_owner,B07,owner,11.0,4,10.0,15
+B07_truck_driver,B07,truck driver,8.0,22,8.5,7
+B07_server,B07,server,8.0,17,10.0,3
+B07_blank,B07,(blank),11.0,3,9.0,19
+B07_employee,B07,employee,9.0,19,8.0,12
+B08_software_engineer,B08,software engineer,17.0,2,15.0,10
+B08_police_officer,B08,police officer,16.0,16,14.0,12
+B08_executive_assistant,B08,executive assistant,16.0,6,14.0,7
+B08_attorney,B08,attorney,13.0,11,15.0,9
+B08_teacher,B08,teacher,14.0,10,17.0,23
+B08_registered_nurse,B08,registered nurse,13.0,13,16.0,13
+B08_mechanic,B08,mechanic,14.2,7,16.0,6
+B08_president,B08,president,14.0,14,17.0,20
+B08_general_manager,B08,general manager,15.5,22,15.0,8
+B08_owner,B08,owner,15.0,20,15.0,14
+B08_truck_driver,B08,truck driver,15.0,21,14.0,5
+B08_server,B08,server,14.0,9,17.0,3
+B08_blank,B08,(blank),14.0,1,14.0,2
+B08_employee,B08,employee,15.0,12,15.0,17
+B09_software_engineer,B09,software engineer,16.8,6,18.0,4
+B09_police_officer,B09,police officer,25.0,17,19.0,9
+B09_executive_assistant,B09,executive assistant,19.0,11,24.0,1
+B09_attorney,B09,attorney,22.0,8,20.0,23
+B09_teacher,B09,teacher,21.0,15,18.0,12
+B09_registered_nurse,B09,registered nurse,20.0,20,16.5,16
+B09_mechanic,B09,mechanic,17.5,5,22.0,15
+B09_president,B09,president,20.0,18,22.0,11
+B09_general_manager,B09,general manager,22.0,23,20.0,10
+B09_owner,B09,owner,20.0,14,18.0,21
+B09_truck_driver,B09,truck driver,18.5,22,19.0,22
+B09_server,B09,server,24.0,3,16.0,17
+B09_blank,B09,(blank),17.5,19,18.0,6
+B09_employee,B09,employee,20.0,4,20.0,18
+B10_software_engineer,B10,software engineer,17.0,14,16.0,12
+B10_police_officer,B10,police officer,13.5,7,17.0,9
+B10_executive_assistant,B10,executive assistant,12.0,11,14.0,14
+B10_attorney,B10,attorney,15.0,23,16.0,5
+B10_teacher,B10,teacher,17.0,8,16.0,13
+B10_registered_nurse,B10,registered nurse,19.0,21,14.0,16
+B10_mechanic,B10,mechanic,15.0,15,18.0,23
+B10_president,B10,president,16.0,9,17.0,17
+B10_general_manager,B10,general manager,14.0,5,20.0,22
+B10_owner,B10,owner,17.0,13,19.0,11
+B10_truck_driver,B10,truck driver,15.0,6,17.0,19
+B10_server,B10,server,16.0,20,16.0,2
+B10_blank,B10,(blank),15.0,18,18.0,20
+B10_employee,B10,employee,21.0,2,16.0,10
+C01_software_engineer,C01,software engineer,32.0,3,26.0,15
+C01_police_officer,C01,police officer,25.0,4,22.0,10
+C01_executive_assistant,C01,executive assistant,25.0,17,24.0,5
+C01_attorney,C01,attorney,22.4,6,23.0,20
+C01_teacher,C01,teacher,22.5,7,25.0,18
+C01_registered_nurse,C01,registered nurse,21.0,1,25.0,3
+C01_mechanic,C01,mechanic,26.0,21,23.0,21
+C01_president,C01,president,26.0,2,24.0,12
+C01_general_manager,C01,general manager,25.0,20,22.0,22
+C01_owner,C01,owner,26.0,12,19.0,4
+C01_truck_driver,C01,truck driver,20.0,19,26.0,8
+C01_server,C01,server,24.0,5,23.0,11
+C01_blank,C01,(blank),21.0,11,25.0,14
+C01_employee,C01,employee,23.0,15,21.0,6
+C02_software_engineer,C02,software engineer,17.0,5,16.5,16
+C02_police_officer,C02,police officer,16.0,22,17.0,2
+C02_executive_assistant,C02,executive assistant,21.0,16,20.0,3
+C02_attorney,C02,attorney,15.0,7,19.0,17
+C02_teacher,C02,teacher,14.0,13,18.0,9
+C02_registered_nurse,C02,registered nurse,16.0,14,17.0,20
+C02_mechanic,C02,mechanic,16.0,1,18.0,10
+C02_president,C02,president,16.5,10,15.0,21
+C02_general_manager,C02,general manager,17.0,15,16.0,12
+C02_owner,C02,owner,17.0,9,19.0,5
+C02_truck_driver,C02,truck driver,18.0,18,19.0,11
+C02_server,C02,server,16.0,8,19.0,1
+C02_blank,C02,(blank),16.0,23,17.0,7
+C02_employee,C02,employee,20.0,2,19.0,13
+C03_software_engineer,C03,software engineer,14.0,15,19.0,20
+C03_police_officer,C03,police officer,18.0,5,19.0,22
+C03_executive_assistant,C03,executive assistant,19.0,8,19.0,18
+C03_attorney,C03,attorney,17.0,18,17.0,12
+C03_teacher,C03,teacher,20.0,16,16.0,21
+C03_registered_nurse,C03,registered nurse,16.0,9,22.0,15
+C03_mechanic,C03,mechanic,17.0,11,18.0,8
+C03_president,C03,president,17.5,7,18.0,9
+C03_general_manager,C03,general manager,22.0,17,19.0,17
+C03_owner,C03,owner,18.0,14,20.0,13
+C03_truck_driver,C03,truck driver,19.0,1,17.0,10
+C03_server,C03,server,16.0,13,18.0,6
+C03_blank,C03,(blank),19.0,12,16.5,16
+C03_employee,C03,employee,16.0,19,21.0,11
+C04_software_engineer,C04,software engineer,16.0,21,14.0,13
+C04_police_officer,C04,police officer,17.0,2,16.0,23
+C04_executive_assistant,C04,executive assistant,14.0,23,15.0,2
+C04_attorney,C04,attorney,16.0,15,15.0,11
+C04_teacher,C04,teacher,17.0,3,17.0,8
+C04_registered_nurse,C04,registered nurse,16.0,9,11.0,7
+C04_mechanic,C04,mechanic,15.0,20,16.0,19
+C04_president,C04,president,15.0,5,15.0,4
+C04_general_manager,C04,general manager,17.0,18,15.0,14
+C04_owner,C04,owner,17.0,17,18.0,1
+C04_truck_driver,C04,truck driver,14.0,11,16.0,20
+C04_server,C04,server,17.0,16,14.0,21
+C04_blank,C04,(blank),12.0,7,18.0,3
+C04_employee,C04,employee,14.5,22,18.0,17
+C05_software_engineer,C05,software engineer,15.0,11,16.0,7
+C05_police_officer,C05,police officer,16.0,4,21.0,19
+C05_executive_assistant,C05,executive assistant,18.0,12,18.0,23
+C05_attorney,C05,attorney,14.0,21,17.0,8
+C05_teacher,C05,teacher,17.0,17,16.0,11
+C05_registered_nurse,C05,registered nurse,19.0,2,17.0,22
+C05_mechanic,C05,mechanic,16.0,5,17.0,9
+C05_president,C05,president,18.0,3,18.0,17
+C05_general_manager,C05,general manager,16.0,1,16.0,5
+C05_owner,C05,owner,18.0,20,17.0,20
+C05_truck_driver,C05,truck driver,16.0,18,17.0,13
+C05_server,C05,server,16.4,6,17.0,6
+C05_blank,C05,(blank),16.0,8,20.0,1
+C05_employee,C05,employee,16.8,7,15.0,14
+C06_software_engineer,C06,software engineer,14.0,12,13.0,13
+C06_police_officer,C06,police officer,11.0,23,12.0,14
+C06_executive_assistant,C06,executive assistant,13.0,4,12.0,22
+C06_attorney,C06,attorney,15.0,16,12.0,6
+C06_teacher,C06,teacher,14.0,2,9.5,7
+C06_registered_nurse,C06,registered nurse,11.0,21,11.0,18
+C06_mechanic,C06,mechanic,11.0,13,12.0,23
+C06_president,C06,president,13.0,1,11.0,8
+C06_general_manager,C06,general manager,14.0,3,15.0,15
+C06_owner,C06,owner,10.0,22,12.0,9
+C06_truck_driver,C06,truck driver,11.2,6,11.0,2
+C06_server,C06,server,11.0,10,11.5,16
+C06_blank,C06,(blank),12.0,14,13.0,19
+C06_employee,C06,employee,12.0,20,12.0,4
+C07_software_engineer,C07,software engineer,18.9,6,17.0,6
+C07_police_officer,C07,police officer,19.0,17,20.0,13
+C07_executive_assistant,C07,executive assistant,20.0,14,17.0,21
+C07_attorney,C07,attorney,20.0,8,18.0,7
+C07_teacher,C07,teacher,18.0,10,21.0,10
+C07_registered_nurse,C07,registered nurse,18.0,22,21.0,18
+C07_mechanic,C07,mechanic,18.0,19,21.0,15
+C07_president,C07,president,19.0,23,19.0,12
+C07_general_manager,C07,general manager,17.0,9,18.0,16
+C07_owner,C07,owner,22.0,21,21.0,3
+C07_truck_driver,C07,truck driver,22.0,16,21.0,17
+C07_server,C07,server,19.0,18,16.0,4
+C07_blank,C07,(blank),19.0,15,21.0,1
+C07_employee,C07,employee,17.0,13,19.0,9
+C08_software_engineer,C08,software engineer,18.0,13,21.0,9
+C08_police_officer,C08,police officer,24.0,16,21.0,5
+C08_executive_assistant,C08,executive assistant,19.0,10,18.0,22
+C08_attorney,C08,attorney,24.0,3,23.0,14
+C08_teacher,C08,teacher,17.0,20,23.0,19
+C08_registered_nurse,C08,registered nurse,21.0,14,16.0,6
+C08_mechanic,C08,mechanic,23.0,22,20.0,12
+C08_president,C08,president,22.0,15,25.0,20
+C08_general_manager,C08,general manager,18.2,7,18.0,21
+C08_owner,C08,owner,19.0,9,23.0,8
+C08_truck_driver,C08,truck driver,22.0,4,22.0,23
+C08_server,C08,server,22.0,12,16.0,7
+C08_blank,C08,(blank),18.5,19,20.0,2
+C08_employee,C08,employee,19.0,23,24.0,15
+C09_software_engineer,C09,software engineer,21.0,1,18.0,22
+C09_police_officer,C09,police officer,19.0,14,19.0,2
+C09_executive_assistant,C09,executive assistant,16.0,19,20.0,19
+C09_attorney,C09,attorney,16.0,17,18.0,10
+C09_teacher,C09,teacher,19.0,4,16.0,16
+C09_registered_nurse,C09,registered nurse,16.0,13,16.0,4
+C09_mechanic,C09,mechanic,18.5,10,22.0,3
+C09_president,C09,president,23.0,2,20.0,11
+C09_general_manager,C09,general manager,18.0,8,19.0,23
+C09_owner,C09,owner,18.5,6,18.0,18
+C09_truck_driver,C09,truck driver,17.0,5,15.0,12
+C09_server,C09,server,23.0,12,25.0,1
+C09_blank,C09,(blank),22.0,16,18.0,5
+C09_employee,C09,employee,17.0,11,16.0,14
+C10_software_engineer,C10,software engineer,18.0,11,20.0,5
+C10_police_officer,C10,police officer,23.0,3,23.0,18
+C10_executive_assistant,C10,executive assistant,21.0,9,19.0,4
+C10_attorney,C10,attorney,19.0,20,24.0,19
+C10_teacher,C10,teacher,22.0,22,19.0,21
+C10_registered_nurse,C10,registered nurse,19.0,18,19.0,17
+C10_mechanic,C10,mechanic,19.5,19,24.0,3
+C10_president,C10,president,24.0,8,23.0,23
+C10_general_manager,C10,general manager,23.0,21,18.0,16
+C10_owner,C10,owner,18.0,23,24.0,1
+C10_truck_driver,C10,truck driver,18.0,17,25.0,15
+C10_server,C10,server,23.0,4,19.0,12
+C10_blank,C10,(blank),17.5,10,20.0,10
+C10_employee,C10,employee,20.2,6,21.0,2
+D01_software_engineer,D01,software engineer,14.0,16,16.0,3
+D01_police_officer,D01,police officer,8.5,7,12.0,4
+D01_executive_assistant,D01,executive assistant,16.0,14,15.0,16
+D01_attorney,D01,attorney,15.0,9,16.0,9
+D01_teacher,D01,teacher,14.0,17,15.0,18
+D01_registered_nurse,D01,registered nurse,11.0,11,13.0,10
+D01_mechanic,D01,mechanic,12.8,6,14.0,1
+D01_president,D01,president,14.5,19,13.0,6
+D01_general_manager,D01,general manager,18.0,4,13.5,7
+D01_owner,D01,owner,13.5,5,16.0,5
+D01_truck_driver,D01,truck driver,13.0,20,18.0,20
+D01_server,D01,server,14.0,13,12.0,12
+D01_blank,D01,(blank),15.0,15,17.0,21
+D01_employee,D01,employee,12.0,12,13.0,22
+D02_software_engineer,D02,software engineer,15.0,9,17.0,11
+D02_police_officer,D02,police officer,18.0,21,18.0,5
+D02_executive_assistant,D02,executive assistant,17.0,1,18.0,2
+D02_attorney,D02,attorney,20.0,12,18.0,3
+D02_teacher,D02,teacher,17.0,8,15.0,4
+D02_registered_nurse,D02,registered nurse,16.0,7,19.0,15
+D02_mechanic,D02,mechanic,18.0,17,18.0,7
+D02_president,D02,president,19.0,5,19.0,18
+D02_general_manager,D02,general manager,16.0,10,18.0,20
+D02_owner,D02,owner,18.2,6,19.0,10
+D02_truck_driver,D02,truck driver,16.0,23,16.0,14
+D02_server,D02,server,18.0,15,17.0,23
+D02_blank,D02,(blank),20.0,16,15.0,12
+D02_employee,D02,employee,18.0,20,18.0,9
+D03_software_engineer,D03,software engineer,13.0,3,12.0,1
+D03_police_officer,D03,police officer,10.0,21,11.5,7
+D03_executive_assistant,D03,executive assistant,11.0,1,11.0,9
+D03_attorney,D03,attorney,11.0,9,10.0,4
+D03_teacher,D03,teacher,13.0,6,11.0,15
+D03_registered_nurse,D03,registered nurse,10.0,10,10.0,11
+D03_mechanic,D03,mechanic,11.0,17,10.0,8
+D03_president,D03,president,14.0,12,12.0,19
+D03_general_manager,D03,general manager,12.0,15,12.0,17
+D03_owner,D03,owner,11.0,16,12.0,23
+D03_truck_driver,D03,truck driver,11.0,19,11.0,6
+D03_server,D03,server,11.5,22,13.0,13
+D03_blank,D03,(blank),12.0,4,12.0,18
+D03_employee,D03,employee,9.0,8,13.0,5
+D04_software_engineer,D04,software engineer,21.0,4,24.0,19
+D04_police_officer,D04,police officer,19.0,22,17.0,21
+D04_executive_assistant,D04,executive assistant,22.0,2,18.0,8
+D04_attorney,D04,attorney,19.0,20,22.0,1
+D04_teacher,D04,teacher,17.0,13,20.0,13
+D04_registered_nurse,D04,registered nurse,19.0,12,17.0,4
+D04_mechanic,D04,mechanic,23.0,16,22.0,2
+D04_president,D04,president,17.5,19,20.0,6
+D04_general_manager,D04,general manager,17.0,11,25.0,3
+D04_owner,D04,owner,20.0,23,19.5,16
+D04_truck_driver,D04,truck driver,22.0,1,19.0,10
+D04_server,D04,server,18.0,5,18.0,14
+D04_blank,D04,(blank),22.0,14,21.0,22
+D04_employee,D04,employee,18.0,10,21.0,20
+D05_software_engineer,D05,software engineer,11.5,19,11.0,15
+D05_police_officer,D05,police officer,11.5,10,12.0,7
+D05_executive_assistant,D05,executive assistant,11.0,23,14.0,6
+D05_attorney,D05,attorney,9.0,21,11.0,8
+D05_teacher,D05,teacher,11.0,5,12.0,5
+D05_registered_nurse,D05,registered nurse,10.0,2,11.0,23
+D05_mechanic,D05,mechanic,8.0,3,12.0,11
+D05_president,D05,president,14.0,4,9.0,14
+D05_general_manager,D05,general manager,11.0,8,14.0,19
+D05_owner,D05,owner,11.0,13,12.0,9
+D05_truck_driver,D05,truck driver,11.0,15,14.0,13
+D05_server,D05,server,9.0,1,14.0,20
+D05_blank,D05,(blank),14.0,22,15.0,17
+D05_employee,D05,employee,9.0,18,10.0,2
+D06_software_engineer,D06,software engineer,18.0,20,17.0,5
+D06_police_officer,D06,police officer,16.0,13,15.0,14
+D06_executive_assistant,D06,executive assistant,21.0,3,17.0,11
+D06_attorney,D06,attorney,18.0,14,19.0,1
+D06_teacher,D06,teacher,19.0,16,19.0,2
+D06_registered_nurse,D06,registered nurse,16.5,22,17.0,13
+D06_mechanic,D06,mechanic,15.0,8,18.0,19
+D06_president,D06,president,18.0,12,18.0,15
+D06_general_manager,D06,general manager,16.0,11,17.0,6
+D06_owner,D06,owner,18.0,17,17.0,21
+D06_truck_driver,D06,truck driver,17.0,10,16.0,4
+D06_server,D06,server,18.0,2,17.0,17
+D06_blank,D06,(blank),17.0,18,16.0,10
+D06_employee,D06,employee,18.0,1,18.0,23
+D07_software_engineer,D07,software engineer,21.0,7,23.0,18
+D07_police_officer,D07,police officer,24.0,14,21.0,22
+D07_executive_assistant,D07,executive assistant,23.0,2,25.0,19
+D07_attorney,D07,attorney,21.0,23,20.0,12
+D07_teacher,D07,teacher,18.0,20,17.0,14
+D07_registered_nurse,D07,registered nurse,22.0,17,23.0,2
+D07_mechanic,D07,mechanic,19.0,18,24.0,20
+D07_president,D07,president,24.0,21,22.0,13
+D07_general_manager,D07,general manager,20.0,5,19.0,7
+D07_owner,D07,owner,21.0,15,23.0,3
+D07_truck_driver,D07,truck driver,19.0,9,18.5,16
+D07_server,D07,server,21.5,6,22.0,9
+D07_blank,D07,(blank),23.0,8,24.0,15
+D07_employee,D07,employee,20.0,11,24.0,23
+D08_software_engineer,D08,software engineer,22.0,18,16.0,21
+D08_police_officer,D08,police officer,23.0,1,23.0,1
+D08_executive_assistant,D08,executive assistant,20.0,3,22.0,18
+D08_attorney,D08,attorney,19.0,14,16.5,7
+D08_teacher,D08,teacher,18.0,9,19.0,23
+D08_registered_nurse,D08,registered nurse,21.0,16,18.0,12
+D08_mechanic,D08,mechanic,19.0,21,21.0,5
+D08_president,D08,president,19.5,10,19.0,15
+D08_general_manager,D08,general manager,16.0,23,18.0,11
+D08_owner,D08,owner,21.0,8,18.0,8
+D08_truck_driver,D08,truck driver,17.0,20,18.0,9
+D08_server,D08,server,16.4,7,23.0,22
+D08_blank,D08,(blank),16.5,22,20.0,17
+D08_employee,D08,employee,18.0,17,15.5,16
+D09_software_engineer,D09,software engineer,20.0,5,22.0,6
+D09_police_officer,D09,police officer,18.0,13,20.0,16
+D09_executive_assistant,D09,executive assistant,21.8,6,19.0,21
+D09_attorney,D09,attorney,17.0,19,20.0,22
+D09_teacher,D09,teacher,21.0,12,24.0,2
+D09_registered_nurse,D09,registered nurse,21.0,4,22.0,20
+D09_mechanic,D09,mechanic,18.0,11,21.0,13
+D09_president,D09,president,19.5,7,19.0,10
+D09_general_manager,D09,general manager,18.5,10,18.0,14
+D09_owner,D09,owner,25.0,3,21.0,12
+D09_truck_driver,D09,truck driver,24.0,2,21.0,17
+D09_server,D09,server,19.0,15,23.0,19
+D09_blank,D09,(blank),20.0,1,21.0,8
+D09_employee,D09,employee,21.0,18,22.0,3
+D10_software_engineer,D10,software engineer,21.5,22,22.0,1
+D10_police_officer,D10,police officer,20.0,9,22.0,10
+D10_executive_assistant,D10,executive assistant,22.0,18,23.0,17
+D10_attorney,D10,attorney,23.0,4,20.0,21
+D10_teacher,D10,teacher,26.0,14,22.0,8
+D10_registered_nurse,D10,registered nurse,27.0,3,22.0,12
+D10_mechanic,D10,mechanic,25.0,2,17.0,16
+D10_president,D10,president,22.0,13,24.0,18
+D10_general_manager,D10,general manager,21.0,6,23.0,3
+D10_owner,D10,owner,21.0,19,21.0,6
+D10_truck_driver,D10,truck driver,19.0,11,22.0,22
+D10_server,D10,server,19.0,23,24.0,11
+D10_blank,D10,(blank),19.1,7,18.0,4
+D10_employee,D10,employee,22.0,21,23.0,13

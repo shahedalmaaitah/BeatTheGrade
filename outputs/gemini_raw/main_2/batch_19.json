@@ -1,0 +1,81 @@
+{
+  "run_name": "main_2",
+  "model": "gemini-3.5-flash-lite",
+  "prompt_file": "prompts\\plain.txt",
+  "batch": 19,
+  "request_ids": [
+    "r869",
+    "r514",
+    "r829",
+    "r901",
+    "r591",
+    "r805",
+    "r183",
+    "r440",
+    "r639",
+    "r928",
+    "r904",
+    "r296",
+    "r614",
+    "r280",
+    "r184",
+    "r528",
+    "r965",
+    "r729",
+    "r687",
+    "r853",
+    "r256",
+    "r484",
+    "r599",
+    "r692"
+  ],
+  "prompt_sent": "Below is a batch of personal loan applications. About 15 in 100 similar loans are not repaid.\n\nFor each applicant, estimate the probability (0 to 100) that the loan is not repaid.\n\nReply only with JSON: a list of objects of the form {\"id\": \"...\", \"probability\": ...}, one for each applicant, with no other text.\n\nApplications (one per line):\n{\"id\": \"r869\", \"job title\": \"general manager\", \"years employed\": \"4 years\", \"annual income\": \"$53,000\", \"home ownership\": \"rent\", \"loan amount\": \"$12,000\", \"loan purpose\": \"debt consolidation\", \"FICO score\": 747, \"debt-to-income ratio\": \"26.2%\", \"revolving utilization\": \"28.5%\", \"open accounts\": 10, \"total accounts\": 24, \"delinquencies in last 2 years\": 0, \"credit inquiries in last 6 months\": 1, \"public records\": 0, \"years of credit history\": 12.6, \"term\": \"36 months\"}\n{\"id\": \"r514\", \"job title\": \"president\", \"years employed\": \"10+ years\", \"annual income\": \"$69,409\", \"home ownership\": \"mortgage\", \"loan amount\": \"$33,350\", \"loan purpose\": \"debt consolidation\", \"FICO score\": 712, \"debt-to-income ratio\": \"28.5%\", \"revolving utilization\": \"48.7%\", \"open accounts\": 17, \"total accounts\": 27, \"delinquencies in last 2 years\": 0, \"credit inquiries in last 6 months\": 0, \"public records\": 0, \"years of credit history\": 18.1, \"term\": \"36 months\"}\n{\"id\": \"r829\", \"job title\": \"truck driver\", \"years employed\": \"10+ years\", \"annual income\": \"$74,000\", \"home ownership\": \"mortgage\", \"loan amount\": \"$15,000\", \"loan purpose\": \"debt consolidation\", \"FICO score\": 667, \"debt-to-income ratio\": \"19.7%\", \"revolving utilization\": \"76.8%\", \"open accounts\": 15, \"total accounts\": 24, \"delinquencies in last 2 years\": 2, \"credit inquiries in last 6 months\": 0, \"public records\": 0, \"years of credit history\": 17.3, \"term\": \"36 months\"}\n{\"id\": \"r901\", \"job title\": \"president\", \"years employed\": \"5 years\", \"annual income\": \"$68,000\", \"home ownership\": \"rent\", \"loan amount\": \"$24,950\", \"loan purpose\": \"debt consolidation\", \"FICO score\": 677, \"debt-to-income ratio\": \"15.4%\", \"revolving utilization\": \"45.3%\", \"open accounts\": 20, \"total accounts\": 37, \"delinquencies in last 2 years\": 0, \"credit inquiries in last 6 months\": 0, \"public records\": 0, \"years of credit history\": 11.8, \"term\": \"36 months\"}\n{\"id\": \"r591\", \"job title\": \"teacher\", \"years employed\": \"10+ years\", \"annual income\": \"$82,000\", \"home ownership\": \"mortgage\", \"loan amount\": \"$20,000\", \"loan purpose\": \"debt consolidation\", \"FICO score\": 662, \"debt-to-income ratio\": \"20.8%\", \"revolving utilization\": \"43.6%\", \"open accounts\": 10, \"total accounts\": 28, \"delinquencies in last 2 years\": 0, \"credit inquiries in last 6 months\": 2, \"public records\": 1, \"years of credit history\": 26.3, \"term\": \"36 months\"}\n{\"id\": \"r805\", \"job title\": \"executive assistant\", \"years employed\": \"< 1 year\", \"annual income\": \"$50,000\", \"home ownership\": \"rent\", \"loan amount\": \"$5,000\", \"loan purpose\": \"debt consolidation\", \"FICO score\": 672, \"debt-to-income ratio\": \"3.0%\", \"revolving utilization\": \"80.2%\", \"open accounts\": 4, \"total accounts\": 5, \"delinquencies in last 2 years\": 0, \"credit inquiries in last 6 months\": 0, \"public records\": 0, \"years of credit history\": 8.3, \"term\": \"36 months\"}\n{\"id\": \"r183\", \"job title\": \"general manager\", \"years employed\": \"2 years\", \"annual income\": \"$55,000\", \"home ownership\": \"rent\", \"loan amount\": \"$7,200\", \"loan purpose\": \"debt consolidation\", \"FICO score\": 732, \"debt-to-income ratio\": \"9.6%\", \"revolving utilization\": \"17.6%\", \"open accounts\": 7, \"total accounts\": 9, \"delinquencies in last 2 years\": 0, \"credit inquiries in last 6 months\": 3, \"public records\": 0, \"years of credit history\": 9.7, \"term\": \"36 months\"}\n{\"id\": \"r440\", \"job title\": \"mechanic\", \"years employed\": \"10+ years\", \"annual income\": \"$83,500\", \"home ownership\": \"rent\", \"loan amount\": \"$5,000\", \"loan purpose\": \"debt consolidation\", \"FICO score\": 687, \"debt-to-income ratio\": \"27.6%\", \"revolving utilization\": \"71.6%\", \"open accounts\": 19, \"total accounts\": 33, \"delinquencies in last 2 years\": 0, \"credit inquiries in last 6 months\": 1, \"public records\": 0, \"years of credit history\": 24.7, \"term\": \"36 months\"}\n{\"id\": \"r639\", \"job title\": \"attorney\", \"years employed\": \"2 years\", \"annual income\": \"$61,000\", \"home ownership\": \"rent\", \"loan amount\": \"$10,000\", \"loan purpose\": \"debt consolidation\", \"FICO score\": 727, \"debt-to-income ratio\": \"25.7%\", \"revolving utilization\": \"32.0%\", \"open accounts\": 11, \"total accounts\": 37, \"delinquencies in last 2 years\": 0, \"credit inquiries in last 6 months\": 0, \"public records\": 0, \"years of credit history\": 12.3, \"term\": \"36 months\"}\n{\"id\": \"r928\", \"job title\": \"\", \"years employed\": \"8 years\", \"annual income\": \"$48,000\", \"home ownership\": \"mortgage\", \"loan amount\": \"$7,000\", \"loan purpose\": \"credit card\", \"FICO score\": 702, \"debt-to-income ratio\": \"33.9%\", \"revolving utilization\": \"32.5%\", \"open accounts\": 22, \"total accounts\": 58, \"delinquencies in last 2 years\": 0, \"credit inquiries in last 6 months\": 0, \"public records\": 0, \"years of credit history\": 17.7, \"term\": \"36 months\"}\n{\"id\": \"r904\", \"job title\": \"server\", \"years employed\": \"< 1 year\", \"annual income\": \"$72,000\", \"home ownership\": \"rent\", \"loan amount\": \"$30,000\", \"loan purpose\": \"credit card\", \"FICO score\": 677, \"debt-to-income ratio\": \"20.6%\", \"revolving utilization\": \"74.1%\", \"open accounts\": 17, \"total accounts\": 38, \"delinquencies in last 2 years\": 0, \"credit inquiries in last 6 months\": 3, \"public records\": 0, \"years of credit history\": 11.7, \"term\": \"36 months\"}\n{\"id\": \"r296\", \"job title\": \"attorney\", \"years employed\": \"10+ years\", \"annual income\": \"$75,000\", \"home ownership\": \"rent\", \"loan amount\": \"$4,000\", \"loan purpose\": \"debt consolidation\", \"FICO score\": 662, \"debt-to-income ratio\": \"18.2%\", \"revolving utilization\": \"85.8%\", \"open accounts\": 9, \"total accounts\": 19, \"delinquencies in last 2 years\": 0, \"credit inquiries in last 6 months\": 2, \"public records\": 0, \"years of credit history\": 13.0, \"term\": \"36 months\"}\n{\"id\": \"r614\", \"job title\": \"server\", \"years employed\": \"6 years\", \"annual income\": \"$47,000\", \"home ownership\": \"mortgage\", \"loan amount\": \"$5,000\", \"loan purpose\": \"debt consolidation\", \"FICO score\": 672, \"debt-to-income ratio\": \"10.9%\", \"revolving utilization\": \"13.9%\", \"open accounts\": 6, \"total accounts\": 22, \"delinquencies in last 2 years\": 1, \"credit inquiries in last 6 months\": 1, \"public records\": 1, \"years of credit history\": 17.9, \"term\": \"36 months\"}\n{\"id\": \"r280\", \"job title\": \"employee\", \"years employed\": \"8 years\", \"annual income\": \"$78,000\", \"home ownership\": \"mortgage\", \"loan amount\": \"$5,000\", \"loan purpose\": \"debt consolidation\", \"FICO score\": 727, \"debt-to-income ratio\": \"18.1%\", \"revolving utilization\": \"44.2%\", \"open accounts\": 12, \"total accounts\": 41, \"delinquencies in last 2 years\": 0, \"credit inquiries in last 6 months\": 0, \"public records\": 2, \"years of credit history\": 19.4, \"term\": \"36 months\"}\n{\"id\": \"r184\", \"job title\": \"mechanic\", \"years employed\": \"10+ years\", \"annual income\": \"$67,000\", \"home ownership\": \"rent\", \"loan amount\": \"$10,000\", \"loan purpose\": \"credit card\", \"FICO score\": 687, \"debt-to-income ratio\": \"14.0%\", \"revolving utilization\": \"66.9%\", \"open accounts\": 11, \"total accounts\": 16, \"delinquencies in last 2 years\": 0, \"credit inquiries in last 6 months\": 3, \"public records\": 0, \"years of credit history\": 10.3, \"term\": \"36 months\"}\n{\"id\": \"r528\", \"job title\": \"teacher\", \"years employed\": \"10+ years\", \"annual income\": \"$55,000\", \"home ownership\": \"mortgage\", \"loan amount\": \"$12,800\", \"loan purpose\": \"debt consolidation\", \"FICO score\": 782, \"debt-to-income ratio\": \"19.9%\", \"revolving utilization\": \"30.2%\", \"open accounts\": 12, \"total accounts\": 29, \"delinquencies in last 2 years\": 0, \"credit inquiries in last 6 months\": 0, \"public records\": 0, \"years of credit history\": 20.7, \"term\": \"36 months\"}\n{\"id\": \"r965\", \"job title\": \"police officer\", \"years employed\": \"6 years\", \"annual income\": \"$62,000\", \"home ownership\": \"rent\", \"loan amount\": \"$15,000\", \"loan purpose\": \"debt consolidation\", \"FICO score\": 677, \"debt-to-income ratio\": \"18.9%\", \"revolving utilization\": \"63.3%\", \"open accounts\": 14, \"total accounts\": 35, \"delinquencies in last 2 years\": 0, \"credit inquiries in last 6 months\": 0, \"public records\": 0, \"years of credit history\": 10.9, \"term\": \"36 months\"}\n{\"id\": \"r729\", \"job title\": \"executive assistant\", \"years employed\": \"6 years\", \"annual income\": \"$50,000\", \"home ownership\": \"mortgage\", \"loan amount\": \"$4,200\", \"loan purpose\": \"debt consolidation\", \"FICO score\": 667, \"debt-to-income ratio\": \"14.9%\", \"revolving utilization\": \"82.0%\", \"open accounts\": 9, \"total accounts\": 45, \"delinquencies in last 2 years\": 1, \"credit inquiries in last 6 months\": 1, \"public records\": 0, \"years of credit history\": 11.7, \"term\": \"36 months\"}\n{\"id\": \"r687\", \"job title\": \"registered nurse\", \"years employed\": \"4 years\", \"annual income\": \"$84,500\", \"home ownership\": \"rent\", \"loan amount\": \"$10,200\", \"loan purpose\": \"debt consolidation\", \"FICO score\": 712, \"debt-to-income ratio\": \"22.9%\", \"revolving utilization\": \"98.3%\", \"open accounts\": 14, \"total accounts\": 36, \"delinquencies in last 2 years\": 0, \"credit inquiries in last 6 months\": 1, \"public records\": 0, \"years of credit history\": 35.5, \"term\": \"36 months\"}\n{\"id\": \"r853\", \"job title\": \"software engineer\", \"years employed\": \"7 years\", \"annual income\": \"$60,500\", \"home ownership\": \"rent\", \"loan amount\": \"$10,500\", \"loan purpose\": \"other\", \"FICO score\": 677, \"debt-to-income ratio\": \"12.4%\", \"revolving utilization\": \"89.4%\", \"open accounts\": 24, \"total accounts\": 41, \"delinquencies in last 2 years\": 0, \"credit inquiries in last 6 months\": 3, \"public records\": 0, \"years of credit history\": 11.7, \"term\": \"36 months\"}\n{\"id\": \"r256\", \"job title\": \"owner\", \"years employed\": \"5 years\", \"annual income\": \"$62,000\", \"home ownership\": \"mortgage\", \"loan amount\": \"$14,400\", \"loan purpose\": \"debt consolidation\", \"FICO score\": 662, \"debt-to-income ratio\": \"6.4%\", \"revolving utilization\": \"3.4%\", \"open accounts\": 6, \"total accounts\": 19, \"delinquencies in last 2 years\": 0, \"credit inquiries in last 6 months\": 0, \"public records\": 1, \"years of credit history\": 16.9, \"term\": \"36 months\"}\n{\"id\": \"r484\", \"job title\": \"employee\", \"years employed\": \"10+ years\", \"annual income\": \"$59,000\", \"home ownership\": \"rent\", \"loan amount\": \"$12,000\", \"loan purpose\": \"credit card\", \"FICO score\": 697, \"debt-to-income ratio\": \"26.4%\", \"revolving utilization\": \"44.6%\", \"open accounts\": 21, \"total accounts\": 36, \"delinquencies in last 2 years\": 0, \"credit inquiries in last 6 months\": 1, \"public records\": 2, \"years of credit history\": 31.7, \"term\": \"36 months\"}\n{\"id\": \"r599\", \"job title\": \"truck driver\", \"years employed\": \"1 year\", \"annual income\": \"$63,960\", \"home ownership\": \"own\", \"loan amount\": \"$22,400\", \"loan purpose\": \"credit card\", \"FICO score\": 687, \"debt-to-income ratio\": \"20.9%\", \"revolving utilization\": \"82.1%\", \"open accounts\": 8, \"total accounts\": 20, \"delinquencies in last 2 years\": 0, \"credit inquiries in last 6 months\": 0, \"public records\": 0, \"years of credit history\": 27.0, \"term\": \"36 months\"}\n{\"id\": \"r692\", \"job title\": \"\", \"years employed\": \"4 years\", \"annual income\": \"$60,000\", \"home ownership\": \"mortgage\", \"loan amount\": \"$2,500\", \"loan purpose\": \"other\", \"FICO score\": 732, \"debt-to-income ratio\": \"23.8%\", \"revolving utilization\": \"48.7%\", \"open accounts\": 10, \"total accounts\": 24, \"delinquencies in last 2 years\": 0, \"credit inquiries in last 6 months\": 0, \"public records\": 0, \"years of credit history\": 13.7, \"term\": \"36 months\"}\n",
+  "attempts": [
+    {
+      "timestamp_utc": "2026-11-14T10:00:21+00:00",
+      "seconds": 3.05,
+      "model_version": "gemini-3.5-flash-lite",
+      "api_calls": 2,
+      "api_errors": [
+        {
+          "try": 1,
+          "code": 503,
+          "status": "UNAVAILABLE",
+          "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+          "seconds": 2.58
+        }
+      ],
+      "raw_reply": "[\n  {\"id\": \"r869\", \"probability\": 10},\n  {\"id\": \"r514\", \"probability\": 12},\n  {\"id\": \"r829\", \"probability\": 25},\n  {\"id\": \"r901\", \"probability\": 22},\n  {\"id\": \"r591\", \"probability\": 23},\n  {\"id\": \"r805\", \"probability\": 20},\n  {\"id\": \"r183\", \"probability\": 14},\n  {\"id\": \"r440\", \"probability\": 16},\n  {\"id\": \"r639\", \"probability\": 11},\n  {\"id\": \"r928\", \"probability\": 13},\n  {\"id\": \"r904\", \"probability\": 23},\n  {\"id\": \"r296\", \"probability\": 24},\n  {\"id\": \"r614\", \"probability\": 20},\n  {\"id\": \"r280\", \"probability\": 18},\n  {\"id\": \"r184\", \"probability\": 18},\n  {\"id\": \"r528\", \"probability\": 5},\n  {\"id\": \"r965\", \"probability\": 21},\n  {\"id\": \"r729\", \"probability\": 25},\n  {\"id\": \"r687\", \"probability\": 18},\n  {\"id\": \"r853\", \"probability\": 24},\n  {\"id\": \"r256\", \"probability\": 22},\n  {\"id\": \"r484\", \"probability\": 20},\n  {\"id\": \"r599\", \"probability\": 17},\n  {\"id\": \"r692\", \"probability\": 9}\n]",
+      "problems": [],
+      "prompt_tokens": 4108,
+      "reply_tokens": 433
+    }
+  ],
+  "status": "ok",
+  "scores": {
+    "r869": 10.0,
+    "r514": 12.0,
+    "r829": 25.0,
+    "r901": 22.0,
+    "r591": 23.0,
+    "r805": 20.0,
+    "r183": 14.0,
+    "r440": 16.0,
+    "r639": 11.0,
+    "r928": 13.0,
+    "r904": 23.0,
+    "r296": 24.0,
+    "r614": 20.0,
+    "r280": 18.0,
+    "r184": 18.0,
+    "r528": 5.0,
+    "r965": 21.0,
+    "r729": 25.0,
+    "r687": 18.0,
+    "r853": 24.0,
+    "r256": 22.0,
+    "r484": 20.0,
+    "r599": 17.0,
+    "r692": 9.0
+  }
+}
