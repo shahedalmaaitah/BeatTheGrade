@@ -1,0 +1,5 @@
+,auc,low,high,loans,defaults
+"Gemini (plain prompt, no job title)",0.6252,0.5529,0.6958,500,68
+LendingClub sub-grade,0.6574,0.5894,0.7282,500,68
+LendingClub interest rate,0.6575,0.5888,0.7285,500,68
+Our model (notebook 02),0.6837,0.6079,0.7545,500,68
