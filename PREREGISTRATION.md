@@ -70,3 +70,15 @@ Each real gap is calculated from 36-month LendingClub loans issued 2007–2015 t
 ## Limitations stated in advance
 
 The ground truth covers approved US borrowers from 2007–2015 only. Job titles are typed by borrowers. There are 12 titles, and the main result covers one vendor and one model version. Job title is not a legally protected attribute. Real gaps may reflect things the grade misses, such as income stability, so they are not proof that the AI's view is fair or unfair.
+
+---
+
+## Clarification note (added 14 November 2026, after the results; the text above is unchanged)
+
+While preparing a later experiment, we found that before late 2013 LendingClub's `emp_title` field held the **employer's name** (for example "us army" or "walmart"), not the job title. The 12 job titles have 0 loans in 2007–2011, 2 in 2012 and 2,070 in 2013 (2,067 of them in Q4). So:
+
+- The real gaps described above as coming from "loans issued 2007–2015" actually come from loans **issued late 2013 to 2015**, the only loans that carry these job titles. Their values are unchanged. Every gap was always computed only from loans that really have these titles.
+- The sign-stability check "between 2007–2014 and 2015" in practice compared **late 2013–2014** with **2015**.
+- The ground truth therefore covers approved US borrowers with these titles from late 2013 to 2015, a narrower period than stated in the limitations above.
+
+Notebook 03 now shows this finding with a table by year.

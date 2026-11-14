@@ -106,3 +106,9 @@ The same 600 loans and the same batch plan as A–C, with the **job title shown*
 ### Limitations stated in advance
 
 D was designed after seeing A–C. It is one run, compared with a C run made earlier in the day, so model updates or run-to-run noise could affect the comparison; the model version reported in each reply is recorded and compared. With 12 titles and 50 loans each, a difference between C and D has to be fairly large to be detected.
+
+---
+
+## Clarification note (added 14 November 2026, after the results; the text above is unchanged)
+
+Where the A–C sections above say the evidence comes from "loans issued 2007–2014", the filter was "issued before 2015". Because LendingClub's `emp_title` field held the employer's name before late 2013, the loans that actually carry these 12 job titles were issued **June 2012 to December 2014**, almost all from Q4 2013 onward (about 15,500 loans). No 2015 data was used, and the evidence values are unchanged. The condition D addendum describes the same finding; it was written before any D results.

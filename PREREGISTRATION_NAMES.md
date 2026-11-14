@@ -52,3 +52,9 @@ A **finding** is any pre-planned contrast whose 95% interval excludes zero. Its 
 ## Limitations stated in advance
 
 The test covers one model and one prompt wording, 40 applications and 8 names. The names come from a 2004 study and may signal race and sex differently today. Scores are averaged over only two runs. Passing this test does not show that the AI is fair in general, only that these names did not move its estimates on these applications.
+
+---
+
+## Clarification note (added 14 November 2026, after the results; the text above is unchanged)
+
+A data finding from a later experiment: before late 2013, LendingClub's `emp_title` field held the employer's name rather than the job title (see notebook 03). **This does not affect the name test.** The name test uses no job-title data: the job title was blank in every version, and its correct answer (zero effect) comes from the law, not from the data.
