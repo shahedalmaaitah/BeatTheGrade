@@ -3,6 +3,7 @@
 Runs only on files committed to the repo (outputs/ and models/), so it works without data/.
 Start it with:  python app.py   then open http://127.0.0.1:7860
 """
+import re
 from html import escape
 from pathlib import Path
 
@@ -27,14 +28,32 @@ REPORT = pd.read_csv(OUT / "report_card.csv")                                # n
 MONEY = pd.read_csv(OUT / "money_test.csv", index_col="grade")               # notebook 02
 GRADE_PLUS = pd.read_csv(OUT / "grade_plus_model.csv", index_col=0)["value"]  # notebook 02
 DEFAULTS = pd.read_csv(OUT / "app_input_defaults.csv", index_col="field")["default"]
+FIX_PATTERNS = pd.read_csv(OUT / "fix_patterns.csv", index_col=0)                   # notebook 08
+FIX_MEASURES = pd.read_csv(OUT / "fix_measures.csv", index_col="condition")         # notebook 08
+FIX_MONEY = pd.read_csv(OUT / "fix_money.csv", index_col=0)                         # notebook 08
+FIX_B, FIX_C = "B: job title", "C: title + evidence"
+FIX_REAL, FIX_EVIDENCE = "reality (2015 gap)", "evidence shown in C (pre-2015 gap)"
+MONEY_B, MONEY_C, MONEY_REAL = "B: title only", "C: title + evidence", "2015 reality"
+# Condition D (evidence + reliability labels). Its per-job number is computed the notebook 08 way: the job's average
+# estimate minus the average over all 600 loans (this reproduces B and C in fix_patterns.csv to 0.001).
+FIX_D = "D: evidence + reliability"
+FIX_D_MEASURES = pd.read_csv(OUT / "fix_D_measures.csv", index_col="condition")
+FIX_D_MONEY = pd.read_csv(OUT / "fix_D_money.csv", index_col=0)
+_scores_d = pd.read_csv(OUT / "fix_scores.csv")[["loan_id", "title"]].merge(
+    pd.read_csv(OUT / "fix_scores_D.csv"), on="loan_id", how="inner", validate="one_to_one")
+assert len(_scores_d) == 600 and _scores_d["D"].notna().all(), "condition D should score all 600 loans"
+FIX_PATTERN_D = _scores_d.groupby("title")["D"].mean() - _scores_d["D"].mean()
 
 SUBGRADES = list(CUTOFFS.index)                                   # A1 ... G5, safest first
 TITLES = [t for t in GAPS.index if GAPS.loc[t, "preregistered"]]  # the 12 tested job titles
 OTHER = "other"
 NAME_PERMUTATION_P = 0.86   # from notebook 07 (not stored in a CSV)
 LOAN_MONTHS = 36
-# Sub-grades with fewer than 200 loans in 2015 have default rates too noisy to match a job gap against
-RELIABLE = RATES[RATES["loans"] >= 200]
+# Before late 2013, LendingClub's emp_title held employer names, not job titles. So every job-title number here
+# comes from the loans with one of the 12 titles, which were issued late 2013-2015 (not all 618,584 loans).
+TITLE_LOANS = int(GAPS.loc[TITLES, "loans"].sum())                  # real gaps: late 2013-2015 loans
+TITLE_LOANS_2015 = int(GAPS.loc[TITLES, "model_loans_2015"].sum())  # our model's miss: 2015 loans
+TITLE_PERIOD = "late 2013–2015"
 
 HOME = [("Mortgage", "MORTGAGE"), ("Rent", "RENT"), ("Own outright", "OWN")]
 PURPOSES = [("Debt consolidation", "debt_consolidation"), ("Pay off credit cards", "credit_card"),
@@ -60,18 +79,17 @@ def deserved_subgrade(risk):
     return ok[0] if len(ok) else SUBGRADES[-1]
 
 
-def job_adjusted(subgrade, title):
-    """Shift by the job's real gap, as in notebook 06: that sub-grade's 2015 default rate + gap -> closest sub-grade."""
-    if title not in TITLES:
-        return subgrade
-    target = RATES.loc[subgrade, "default_rate_pct"] + GAPS.loc[title, "real_gap_pp"]
-    return (RELIABLE["default_rate_pct"] - target).abs().idxmin()
+def model_miss(title):
+    """Our model's own miss for this title, in points: 2015 default rate minus the model's risk, compared with
+    its average miss over all 2015 loans (notebook 03, 'model_gap_vs_all_loans_pp'). This is the job-related
+    risk our model doesn't already capture from income, debt and credit history. 0 for titles we didn't test."""
+    return float(GAPS.loc[title, "model_gap_vs_all_loans_pp"]) if title in TITLES else 0.0
 
 
 def fair_subgrade(app, title):
     risk = model_risk(app)
-    model_sg = deserved_subgrade(risk)
-    return risk, model_sg, job_adjusted(model_sg, title)
+    adjusted = max(risk + model_miss(title) / 100, 0.0)
+    return risk, deserved_subgrade(risk), deserved_subgrade(adjusted)
 
 
 def rate_of(subgrade):
@@ -135,12 +153,14 @@ def check_rate(title, offered_sg, *fields):
     diff = offered_int - fair_int
 
     if title in TITLES:
-        gap = GAPS.loc[title, "real_gap_pp"]
-        word = "less" if gap < 0 else "more"
+        miss = model_miss(title)
+        word = "less" if miss < 0 else "more"
         moved = (f"which moves you from <b>{model_sg}</b> to <b>{final_sg}</b>." if final_sg != model_sg
                  else f"but that's too small to change your sub-grade, so you stay at <b>{final_sg}</b>.")
-        job_html = (f"Borrowers with the job title <b>{nice_title(title)}</b> defaulted <b>{abs(gap):.1f} points {word}</b> "
-                    f"often than their grade predicted ({int(GAPS.loc[title, 'loans']):,} LendingClub loans), {moved}")
+        job_html = (f"Our model never sees job titles. In 2015, borrowers with the job title <b>{nice_title(title)}</b> "
+                    f"defaulted <b>{abs(miss):.1f} points {word}</b> often than our model predicted, compared with its "
+                    f"average miss ({int(GAPS.loc[title, 'model_loans_2015']):,} loans). We adjust your risk by that "
+                    f"amount ({risk:.1%} → {max(risk + miss / 100, 0):.1%}), {moved}")
     else:
         job_html = ("No job adjustment: we only have reliable repayment data for the 12 tested job titles, "
                     f"so your fair sub-grade stays at <b>{final_sg}</b>.")
@@ -159,7 +179,7 @@ def check_rate(title, offered_sg, *fields):
     <div class="ll-s">chance of not repaying</div></div>
   <div class="ll-step"><div class="ll-k">Sub-grade you deserve</div><div class="ll-v">{model_sg}</div>
     <div class="ll-s">same risk rank among 2015 borrowers</div></div>
-  <div class="ll-step"><div class="ll-k">After your job's real gap</div><div class="ll-v">{final_sg}</div>
+  <div class="ll-step"><div class="ll-k">Adjusted for your job</div><div class="ll-v">{final_sg}</div>
     <div class="ll-s">{'adjusted' if final_sg != model_sg else 'no change'}</div></div>
   <div class="ll-step"><div class="ll-k">Fair interest rate</div><div class="ll-v">{fair_rate:.2f}%</div>
     <div class="ll-s">offered {offered_sg}: {offered_rate:.2f}%</div></div>
@@ -260,7 +280,7 @@ def ai_view(title):
         verdict = "Neither reality nor the AI shows a clear effect for this job title."
     return f"""
 <div class="ll-two">
-  <div class="ll-card ll-real"><div class="ll-k">Reality · {int(g['loans']):,} LendingClub loans</div>
+  <div class="ll-card ll-real"><div class="ll-k">Reality · {int(g['loans']):,} loans, {TITLE_PERIOD}</div>
     <div class="ll-big">{g['real_gap_pp']:+.1f} pts</div>
     <p>{nice_title(title)}s defaulted {abs(g['real_gap_pp']):.1f} points {real_word} often than their grade predicted
     ({interval(g['ci_low'], g['ci_high'])}).</p></div>
@@ -287,6 +307,99 @@ def name_summary():
 </ul>
 <p class="ll-note">The test could reliably detect a bias of about 0.3–0.4 points or more; smaller ones can't be ruled out.</p>
 </div>"""
+
+
+def first_number(text):
+    return float(re.match(r"\s*([+-]?\d+(?:\.\d+)?)", str(text)).group(1))
+
+
+def price(cell):
+    """'B2 (-518 $)' -> ('B2', -518.0)"""
+    m = re.match(r"\s*(\w+)\s*\(([+-]?\d+(?:\.\d+)?)\s*\$\)", str(cell))
+    return m.group(1), float(m.group(2))
+
+
+def spread(column):
+    dollars = [price(v)[1] for v in FIX_MONEY[column]]
+    return max(dollars) - min(dollars)
+
+
+def evidence_summary():
+    dist_b = first_number(FIX_MEASURES.loc[FIX_B, "distance"])
+    dist_c = first_number(FIX_MEASURES.loc[FIX_C, "distance"])
+    p = FIX_PATTERNS.loc["president"]
+    return f"""
+<div class="ll-two">
+  <div class="ll-card"><div class="ll-k">Across all 12 jobs</div>
+    <p>With evidence, Gemini's view of jobs got <b>about twice as close to reality</b>: its average distance from
+    the real 2015 gaps fell from <b>{dist_b:.2f}</b> to <b>{dist_c:.2f}</b> points.</p>
+    <p>Its <b>price spread between jobs</b> went from <b>${spread(MONEY_B):,.0f}</b> to <b>${spread(MONEY_C):,.0f}</b>,
+    against <b>${spread(MONEY_REAL):,.0f}</b> in reality. That's the gap between the cheapest and the most expensive job
+    for a typical C1 borrower, on $10,000 over 36 months.</p>
+    <p>Adding reliability labels (D) left the distance about the same:
+    <b>{first_number(FIX_D_MEASURES.loc[FIX_D, "distance"]):.2f}</b>, a change from C too small to detect.</p></div>
+  <div class="ll-card ll-warn"><div class="ll-k">Honest warning</div>
+    <p>Gemini <b>copied the evidence, mistakes included</b>. For president, the 2012–2014 evidence said
+    <b>{p[FIX_EVIDENCE]:+.1f}</b> points, but in 2015 presidents were <b>{p[FIX_REAL]:+.1f}</b> points riskier than
+    their grade predicted. Gemini followed the evidence and rated them <b>{p[FIX_C]:+.1f}</b>.</p>
+    <p><b>An AI loan officer is only as good as its evidence.</b></p></div>
+</div>
+<p class="ll-note">Pricing by job title can partly stand in for sex and other protected traits, which this data can't
+measure.</p>"""
+
+
+def evidence_view(title):
+    row, money_row = FIX_PATTERNS.loc[title], FIX_MONEY.loc[title]
+    b, c, r, ev = row[FIX_B], row[FIX_C], row[FIX_REAL], row[FIX_EVIDENCE]
+    d = float(FIX_PATTERN_D[title])
+    off_b, off_c, off_d = abs(b - r), abs(c - r), abs(d - r)
+
+    def card(cls, label, value, sub, extra=""):
+        return (f"<div class='ll-card {cls}'><div class='ll-k'>{label}</div><div class='ll-big'>{value:+.1f} pts</div>"
+                f"<div class='ll-s'>{sub}</div>{extra}</div>")
+
+    def priced(cell):
+        sg, dollars = price(cell)
+        cost = "same as C1" if dollars == 0 else f"{'+' if dollars > 0 else '−'}${abs(dollars):,.0f}"
+        return f"<b>{sg}</b> ({cost})"
+
+    name = nice_title(title) + "s"
+    if off_c < off_b - 0.25:
+        verdict, tone = (f"Evidence moved Gemini toward reality for {name}: it was {off_b:.1f} points off, now "
+                         f"{off_c:.1f}."), "good"
+    elif off_c > off_b + 0.25:
+        verdict, tone = (f"Evidence moved Gemini further from reality for {name}: {off_b:.1f} → {off_c:.1f} points "
+                         "off."), "bad"
+    else:
+        verdict, tone = f"Evidence barely changed Gemini's view of {name} ({off_b:.1f} → {off_c:.1f} points off).", "neutral"
+    if np.sign(ev) != np.sign(r):
+        verdict += (f" The evidence it was shown ({ev:+.1f}, from 2012–2014 loans) pointed the wrong way: in 2015 the "
+                    f"real gap was {r:+.1f}.")
+    elif off_c > off_b + 0.25:
+        verdict += (f" It followed the evidence ({ev:+.1f}), which {'over' if abs(ev) > abs(r) else 'under'}stated "
+                    f"this job's 2015 gap ({r:+.1f}).")
+    verdict += f" With reliability labels too: {off_d:.1f} points off."
+
+    return f"""
+<div class="ll-four">
+  {card("ll-fix-b", "Gemini alone", b, f"{off_b:.1f} pts from reality")}
+  {card("ll-fix-c", "Gemini + LoanLens evidence", c, f"{off_c:.1f} pts from reality",
+        f"<div class='ll-delta'>{c - b:+.1f} pts with evidence</div>")}
+  {card("ll-real", "Reality, 2015 loans", r, "what really happened")}
+  {card("ll-fix-d", "Gemini + evidence with reliability", d, f"{off_d:.1f} pts from reality",
+        f"<div class='ll-delta ll-delta-d'>{d - c:+.1f} pts vs evidence alone</div>")}
+</div>
+<p class="ll-under">Reliability labels made it slightly more cautious, but it still followed a confident wrong number.
+The quality of the evidence decides.</p>
+<div class="ll-verdict ll-{tone}">{verdict}</div>
+<div class="ll-card"><div class="ll-k">What it would mean for a typical C1 borrower ($10,000, 36 months)</div>
+  <p>Gemini alone: {priced(money_row[MONEY_B])} · Gemini + evidence: {priced(money_row[MONEY_C])} ·
+  With reliability: {priced(FIX_D_MONEY.loc[title, FIX_D])} · Reality: {priced(money_row[MONEY_REAL])}</p>
+  <p class="ll-s">These prices use only how much the job title itself moved Gemini's estimate (compared with the same
+  loans shown without a title), so they can differ from the numbers above.</p></div>
+<p class="ll-note">Points = how much riskier (+) or safer (−) Gemini rated this job than its typical loan, from 600 real
+2015 loans (50 per job). The evidence shown to Gemini came only from loans issued before 2015. Reality is the job's 2015
+default rate compared with what the grade predicted.</p>"""
 
 
 # ---------------------------------------------------------------- tab 4: audit report
@@ -322,6 +435,16 @@ CSS = """
 .ll-card p { margin: 6px 0; line-height: 1.5; }
 .ll-card ul { margin: 6px 0 6px 18px; }
 .ll-two { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 12px; }
+.ll-four { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; margin-bottom: 4px; }
+.ll-fix-b { border-top: 4px solid #a8a69f; }
+.ll-fix-c { border-top: 4px solid #2a78d6; box-shadow: 0 0 0 2px rgba(42, 120, 214, .35); }
+.ll-delta { display: inline-block; margin-top: 8px; padding: 2px 10px; border-radius: 999px; font-weight: 600;
+  font-size: .85rem; background: rgba(42, 120, 214, .15); color: #2a78d6; }
+.ll-fix-d { border-top: 4px solid #1f8a7a; }
+.ll-delta-d { background: rgba(31, 138, 122, .15); color: #1f8a7a; }
+.ll-under { margin: 10px 2px 0; font-size: 1rem; font-weight: 600; line-height: 1.45; }
+.ll-warn { border-left: 6px solid #eb6834; }
+.ll-section { font-size: 1.2rem; font-weight: 700; margin: 22px 0 2px; }
 .ll-real { border-top: 4px solid #eb6834; }
 .ll-ai { border-top: 4px solid #2a78d6; }
 .ll-scroll { overflow-x: auto; }
@@ -355,6 +478,7 @@ CSS = """
 @media (max-width: 760px) {
   .ll-steps, .ll-three { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .ll-two { grid-template-columns: 1fr; }
+  .ll-four { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 """
 
@@ -420,22 +544,32 @@ with gr.Blocks(title="LoanLens") as demo:
 
         # ---------------- tab 2
         with gr.Tab("Will an AI judge me fairly?"):
-            gr.HTML("<div class='ll-headline'>Fair but blind: the AI ignores your name (good) and your job (a missed signal).</div>"
+            gr.HTML("<div class='ll-headline'>Fair, blind, and fixable: the AI ignores your name (good), ignores your job "
+                    "(a missed signal), and evidence fixes it.</div>"
                     "<p class='ll-note'>We gave Gemini the same real loan applications many times, changing only the job "
-                    "title or only the first name, and compared its reaction with how borrowers really repaid.</p>")
+                    "title or only the first name, and compared its reaction with how borrowers really repaid.</p>"
+                    f"<p class='ll-note'>Where the job numbers come from: before late 2013, LendingClub's job field held "
+                    f"employer names, not job titles. So each job's real repayment gap is measured on the "
+                    f"{TITLE_LOANS:,} loans issued {TITLE_PERIOD} that carry one of these 12 titles, not on all "
+                    f"618,584 loans.</p>")
             ai_job = gr.Dropdown([(nice_title(t), t) for t in TITLES], value="software engineer", label="Pick a job")
             ai_out = gr.HTML()
+            gr.HTML("<div class='ll-section'>Can evidence fix it?</div>"
+                    "<p class='ll-note'>A second test: Gemini scored 600 real 2015 loans with the job title shown, once "
+                    "alone and once with a LoanLens table of each job's real repayment gap from earlier loans.</p>")
+            fix_out = gr.HTML()
+            gr.HTML(evidence_summary())
+            gr.HTML("<div class='ll-section'>Does your name matter?</div>")
             gr.HTML(name_summary())
             with gr.Row():
                 with gr.Column():
                     chart("ai_vs_reality.png", "Orange: how each job really repaid vs its grade. Blue: how much the AI's "
-                          "estimate moved for that job. The AI stays near zero while reality swings ±5 points.")
+                          "estimate moved for that job. The AI stays near zero while reality swings ±5 points. "
+                          f"(The chart's subtitle counts all 618,584 loans; the job gaps themselves come from the "
+                          f"{TITLE_LOANS:,} loans with these titles, issued {TITLE_PERIOD}.)")
                 with gr.Column():
                     chart("name_test.png", "Changing only the first name: every effect sits inside the ±0.3-point "
                           "noise band, and every interval crosses zero.")
-            gr.HTML("<div class='ll-placeholder'><div class='ll-k'>Placeholder · to be filled in later</div>"
-                    "<p><b>Can evidence fix it?</b> If we show the AI the real repayment data for each job, does it start "
-                    "using the job signal correctly? Results will go here.</p></div>")
 
         # ---------------- tab 3
         with gr.Tab("What would get me a better rate?"):
@@ -462,8 +596,10 @@ with gr.Blocks(title="LoanLens") as demo:
     check_btn.click(check_rate, [job, offered_sg] + FIELDS, rate_out)
     better_btn.click(better_rate, [job, offered_sg] + FIELDS, better_out)
     ai_job.change(ai_view, ai_job, ai_out)
+    ai_job.change(evidence_view, ai_job, fix_out)
     demo.load(check_rate, [job, offered_sg] + FIELDS, rate_out)
     demo.load(ai_view, ai_job, ai_out)
+    demo.load(evidence_view, ai_job, fix_out)
 
 
 if __name__ == "__main__":
