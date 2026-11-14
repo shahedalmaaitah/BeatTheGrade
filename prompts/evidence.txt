@@ -1,0 +1,22 @@
+Below is a batch of personal loan applications. About 15 in 100 similar loans are not repaid.
+
+For each applicant, estimate the probability (0 to 100) that the loan is not repaid.
+
+Reply only with JSON: a list of objects of the form {"id": "...", "probability": ...}, one for each applicant, with no other text.
+
+Historical data on job titles, from past loans on the same lending platform:
+- software engineer. Historical data: borrowers with this job title defaulted 7.2 percentage points less often than similar borrowers.
+- police officer. Historical data: borrowers with this job title defaulted 4.9 percentage points less often than similar borrowers.
+- executive assistant. Historical data: borrowers with this job title defaulted 3.7 percentage points less often than similar borrowers.
+- attorney. Historical data: borrowers with this job title defaulted 3.8 percentage points less often than similar borrowers.
+- teacher. Historical data: borrowers with this job title defaulted 1.8 percentage points less often than similar borrowers.
+- registered nurse. Historical data: borrowers with this job title defaulted 1.1 percentage points less often than similar borrowers.
+- mechanic. Historical data: borrowers with this job title defaulted 0.7 percentage points more often than similar borrowers.
+- president. Historical data: borrowers with this job title defaulted 2.1 percentage points less often than similar borrowers.
+- general manager. Historical data: borrowers with this job title defaulted 1.6 percentage points more often than similar borrowers.
+- owner. Historical data: borrowers with this job title defaulted 2.6 percentage points more often than similar borrowers.
+- truck driver. Historical data: borrowers with this job title defaulted 4.4 percentage points more often than similar borrowers.
+- server. Historical data: borrowers with this job title defaulted 6.8 percentage points more often than similar borrowers.
+
+Applications (one per line):
+{applications}
