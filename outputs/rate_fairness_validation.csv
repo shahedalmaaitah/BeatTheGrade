@@ -1,0 +1,8 @@
+placement,loans,actual_default_pct,grade_predicted_pct,difference_pts,share_of_loans_pct
+5+ grades better,45723,18.85,23.39,-4.54,16.16
+3-4 better,33291,14.78,17.16,-2.38,11.76
+1-2 better,46793,12.95,14.1,-1.16,16.53
+same sub-grade,29413,11.23,11.49,-0.26,10.39
+1-2 worse,46808,13.53,12.27,1.26,16.54
+3-4 worse,34754,14.59,12.19,2.41,12.28
+5+ grades worse,46244,16.93,12.47,4.46,16.34

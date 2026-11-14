@@ -2,25 +2,22 @@
 
 Do these once, in order. Total time: about 30 minutes, most of it the data download.
 
-## 1. Make the repo and put these files in it
+## 1. Get the code
 
-1. On github.com, create a new **public** repository called `beat-the-grade`. Tick "Add a README".
-2. Open PowerShell and run:
+Open PowerShell and clone this repository:
 
-   ```powershell
-   cd $HOME\Projects
-   git clone https://github.com/YOUR-USERNAME/beat-the-grade.git
-   cd beat-the-grade
-   ```
-
-3. Unzip the starter files and copy everything inside into this `beat-the-grade` folder. Let it replace the README.
+```powershell
+cd $HOME\Projects
+git clone https://github.com/YOUR-USERNAME/beat-the-grade.git
+cd beat-the-grade
+```
 
 ## 2. Create the Python environment
 
-Still in PowerShell, inside the folder:
+Still in PowerShell, inside the folder. The pinned versions in `requirements.txt` were tested with **Python 3.12**; on newer versions some packages may need extra build tools.
 
 ```powershell
-py -m venv .venv
+py -3.12 -m venv .venv
 .venv\Scripts\Activate.ps1
 pip install -r requirements.txt
 ```
@@ -59,7 +56,7 @@ code .
 
 ## 6. Save your progress to GitHub
 
-Do this every couple of hours, and always with the notebook outputs visible (judges read them):
+Commit with the notebook outputs saved, so the results show on GitHub:
 
 ```powershell
 git add .

@@ -1,0 +1,7 @@
+ranker,loans,AUC,low,high
+"Gemini (plain prompt, no job title)",500 check loans,0.6252,0.5529,0.6958
+FICO score alone,500 check loans,0.5786,0.5069,0.644
+LendingClub sub-grade,500 check loans,0.6574,0.5894,0.7282
+"Gemini (plain prompt, no job title) minus FICO score alone",500 check loans,0.0466,-0.0037,0.1001
+LendingClub sub-grade minus FICO score alone,500 check loans,0.0788,0.0083,0.1563
+FICO score alone,"all 283,026 2015 loans",0.6015,0.5985,0.6041
