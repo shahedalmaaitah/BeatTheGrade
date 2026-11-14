@@ -1,0 +1,361 @@
+version_id,app_id,condition,names_1,batch_names_1,names_2,batch_names_2
+A01_Emily,A01,Emily,11.0,3,11.0,2
+A01_Anne,A01,Anne,10.0,11,11.0,11
+A01_Greg,A01,Greg,10.0,14,11.5,6
+A01_Todd,A01,Todd,10.0,2,9.0,9
+A01_Lakisha,A01,Lakisha,11.0,10,10.0,15
+A01_Tamika,A01,Tamika,10.0,9,11.0,5
+A01_Jamal,A01,Jamal,10.0,6,10.5,1
+A01_Darnell,A01,Darnell,10.5,13,9.0,8
+A01_noname,A01,(no name),10.0,15,12.0,4
+A02_Emily,A02,Emily,6.0,9,4.0,12
+A02_Anne,A02,Anne,4.0,13,4.0,9
+A02_Greg,A02,Greg,5.0,7,5.0,3
+A02_Todd,A02,Todd,3.0,2,5.0,10
+A02_Lakisha,A02,Lakisha,6.0,6,5.0,15
+A02_Tamika,A02,Tamika,4.0,15,4.5,8
+A02_Jamal,A02,Jamal,4.0,3,5.5,2
+A02_Darnell,A02,Darnell,3.0,5,4.5,4
+A02_noname,A02,(no name),5.0,12,5.0,14
+A03_Emily,A03,Emily,8.0,5,7.5,8
+A03_Anne,A03,Anne,8.0,8,10.5,4
+A03_Greg,A03,Greg,9.0,2,9.0,3
+A03_Todd,A03,Todd,9.5,11,10.5,13
+A03_Lakisha,A03,Lakisha,10.0,4,8.0,9
+A03_Tamika,A03,Tamika,10.0,12,8.0,7
+A03_Jamal,A03,Jamal,9.5,10,8.0,12
+A03_Darnell,A03,Darnell,8.0,1,8.0,14
+A03_noname,A03,(no name),8.0,14,9.0,10
+A04_Emily,A04,Emily,16.5,10,16.0,14
+A04_Anne,A04,Anne,17.0,8,18.2,6
+A04_Greg,A04,Greg,16.5,6,16.0,15
+A04_Todd,A04,Todd,18.0,12,16.0,12
+A04_Lakisha,A04,Lakisha,14.0,1,17.5,2
+A04_Tamika,A04,Tamika,16.0,9,17.0,3
+A04_Jamal,A04,Jamal,15.0,5,16.0,8
+A04_Darnell,A04,Darnell,17.5,7,16.0,5
+A04_noname,A04,(no name),17.5,4,17.0,13
+A05_Emily,A05,Emily,19.5,7,19.0,8
+A05_Anne,A05,Anne,20.0,9,16.0,11
+A05_Greg,A05,Greg,17.0,14,22.0,3
+A05_Todd,A05,Todd,19.0,15,18.0,5
+A05_Lakisha,A05,Lakisha,23.0,1,16.5,1
+A05_Tamika,A05,Tamika,19.0,3,18.0,12
+A05_Jamal,A05,Jamal,16.0,4,17.5,6
+A05_Darnell,A05,Darnell,16.0,6,18.0,14
+A05_noname,A05,(no name),16.5,11,17.0,2
+A06_Emily,A06,Emily,6.0,14,6.5,1
+A06_Anne,A06,Anne,5.5,4,6.0,3
+A06_Greg,A06,Greg,6.0,2,5.0,7
+A06_Todd,A06,Todd,6.0,1,4.5,10
+A06_Lakisha,A06,Lakisha,4.0,5,8.0,11
+A06_Tamika,A06,Tamika,5.0,13,7.5,13
+A06_Jamal,A06,Jamal,5.0,8,7.8,6
+A06_Darnell,A06,Darnell,6.5,7,6.0,15
+A06_noname,A06,(no name),6.0,12,6.0,5
+A07_Emily,A07,Emily,15.5,11,15.0,5
+A07_Anne,A07,Anne,15.0,3,13.0,13
+A07_Greg,A07,Greg,14.5,7,14.0,4
+A07_Todd,A07,Todd,19.0,5,13.0,1
+A07_Lakisha,A07,Lakisha,15.0,8,14.0,14
+A07_Tamika,A07,Tamika,12.5,4,15.0,7
+A07_Jamal,A07,Jamal,12.0,15,11.0,11
+A07_Darnell,A07,Darnell,18.0,2,13.5,6
+A07_noname,A07,(no name),12.0,9,16.0,9
+A08_Emily,A08,Emily,12.0,1,10.0,7
+A08_Anne,A08,Anne,13.0,15,16.5,4
+A08_Greg,A08,Greg,11.5,10,11.0,15
+A08_Todd,A08,Todd,13.0,4,10.0,9
+A08_Lakisha,A08,Lakisha,12.0,8,14.0,8
+A08_Tamika,A08,Tamika,10.0,7,13.0,2
+A08_Jamal,A08,Jamal,11.0,11,11.0,12
+A08_Darnell,A08,Darnell,12.0,14,12.0,10
+A08_noname,A08,(no name),12.5,13,12.5,13
+A09_Emily,A09,Emily,16.0,8,14.0,11
+A09_Anne,A09,Anne,16.0,12,13.5,10
+A09_Greg,A09,Greg,14.0,3,14.0,7
+A09_Todd,A09,Todd,13.5,13,14.0,14
+A09_Lakisha,A09,Lakisha,15.5,9,15.0,13
+A09_Tamika,A09,Tamika,15.0,2,12.0,12
+A09_Jamal,A09,Jamal,14.0,6,15.0,3
+A09_Darnell,A09,Darnell,13.5,10,13.5,1
+A09_noname,A09,(no name),14.0,5,14.5,2
+A10_Emily,A10,Emily,12.0,1,16.0,4
+A10_Anne,A10,Anne,14.5,13,15.0,1
+A10_Greg,A10,Greg,14.2,11,14.5,10
+A10_Todd,A10,Todd,16.0,15,14.0,11
+A10_Lakisha,A10,Lakisha,14.0,12,14.5,7
+A10_Tamika,A10,Tamika,14.0,14,17.2,6
+A10_Jamal,A10,Jamal,14.5,10,13.0,5
+A10_Darnell,A10,Darnell,14.0,3,13.0,9
+A10_noname,A10,(no name),17.5,6,14.0,15
+B01_Emily,B01,Emily,18.0,15,17.0,6
+B01_Anne,B01,Anne,16.0,10,18.0,14
+B01_Greg,B01,Greg,16.5,9,16.0,9
+B01_Todd,B01,Todd,15.0,8,13.0,11
+B01_Lakisha,B01,Lakisha,17.0,7,15.0,1
+B01_Tamika,B01,Tamika,15.5,6,18.0,15
+B01_Jamal,B01,Jamal,18.0,12,17.0,4
+B01_Darnell,B01,Darnell,22.0,5,17.0,2
+B01_noname,B01,(no name),17.0,2,17.5,7
+B02_Emily,B02,Emily,19.0,8,22.5,7
+B02_Anne,B02,Anne,24.0,9,20.0,2
+B02_Greg,B02,Greg,21.0,12,16.0,12
+B02_Todd,B02,Todd,19.0,6,22.0,6
+B02_Lakisha,B02,Lakisha,26.0,2,18.0,11
+B02_Tamika,B02,Tamika,23.0,13,16.0,13
+B02_Jamal,B02,Jamal,20.0,14,24.0,4
+B02_Darnell,B02,Darnell,20.0,15,17.0,9
+B02_noname,B02,(no name),25.0,3,25.0,15
+B03_Emily,B03,Emily,22.0,14,23.0,3
+B03_Anne,B03,Anne,28.0,2,24.0,15
+B03_Greg,B03,Greg,18.0,13,19.0,1
+B03_Todd,B03,Todd,27.0,5,23.0,8
+B03_Lakisha,B03,Lakisha,22.0,15,23.0,10
+B03_Tamika,B03,Tamika,22.0,1,18.0,11
+B03_Jamal,B03,Jamal,18.0,4,19.0,14
+B03_Darnell,B03,Darnell,19.0,11,21.0,9
+B03_noname,B03,(no name),21.0,8,25.0,4
+B04_Emily,B04,Emily,14.0,15,15.0,15
+B04_Anne,B04,Anne,18.0,2,15.5,7
+B04_Greg,B04,Greg,16.5,6,14.0,1
+B04_Todd,B04,Todd,15.0,12,15.0,8
+B04_Lakisha,B04,Lakisha,16.0,13,16.0,3
+B04_Tamika,B04,Tamika,14.0,9,13.0,9
+B04_Jamal,B04,Jamal,15.0,1,13.0,14
+B04_Darnell,B04,Darnell,15.0,11,15.0,5
+B04_noname,B04,(no name),14.0,8,14.0,13
+B05_Emily,B05,Emily,17.0,4,15.5,1
+B05_Anne,B05,Anne,20.0,1,21.0,2
+B05_Greg,B05,Greg,22.0,5,11.5,7
+B05_Todd,B05,Todd,23.0,3,20.0,4
+B05_Lakisha,B05,Lakisha,14.0,10,20.0,15
+B05_Tamika,B05,Tamika,23.0,12,21.0,10
+B05_Jamal,B05,Jamal,18.5,11,18.5,8
+B05_Darnell,B05,Darnell,20.5,13,19.0,12
+B05_noname,B05,(no name),23.5,7,18.0,3
+B06_Emily,B06,Emily,25.0,5,24.0,10
+B06_Anne,B06,Anne,21.0,7,24.0,5
+B06_Greg,B06,Greg,22.0,8,23.0,12
+B06_Todd,B06,Todd,22.5,4,22.0,8
+B06_Lakisha,B06,Lakisha,22.5,6,19.0,3
+B06_Tamika,B06,Tamika,21.0,11,21.0,13
+B06_Jamal,B06,Jamal,22.0,13,24.0,14
+B06_Darnell,B06,Darnell,23.0,3,26.5,4
+B06_noname,B06,(no name),22.0,14,22.4,6
+B07_Emily,B07,Emily,9.0,12,11.5,4
+B07_Anne,B07,Anne,9.0,14,11.2,6
+B07_Greg,B07,Greg,9.0,3,10.0,12
+B07_Todd,B07,Todd,10.0,2,9.5,7
+B07_Lakisha,B07,Lakisha,9.5,9,10.0,5
+B07_Tamika,B07,Tamika,9.5,4,11.5,2
+B07_Jamal,B07,Jamal,9.0,15,10.0,13
+B07_Darnell,B07,Darnell,10.0,10,9.0,15
+B07_noname,B07,(no name),8.0,1,9.5,1
+B08_Emily,B08,Emily,12.0,6,12.0,8
+B08_Anne,B08,Anne,14.0,5,16.5,13
+B08_Greg,B08,Greg,13.5,10,13.0,9
+B08_Todd,B08,Todd,15.0,7,12.0,14
+B08_Lakisha,B08,Lakisha,15.0,14,13.0,3
+B08_Tamika,B08,Tamika,13.0,8,13.0,11
+B08_Jamal,B08,Jamal,13.5,9,14.0,5
+B08_Darnell,B08,Darnell,15.5,4,16.0,10
+B08_noname,B08,(no name),16.0,2,16.2,6
+B09_Emily,B09,Emily,18.0,3,19.0,9
+B09_Anne,B09,Anne,19.0,14,19.5,7
+B09_Greg,B09,Greg,18.0,1,20.5,2
+B09_Todd,B09,Todd,19.0,10,18.0,13
+B09_Lakisha,B09,Lakisha,18.5,11,17.0,8
+B09_Tamika,B09,Tamika,22.0,5,20.0,12
+B09_Jamal,B09,Jamal,19.0,15,21.5,10
+B09_Darnell,B09,Darnell,16.0,7,19.0,5
+B09_noname,B09,(no name),19.0,4,21.0,11
+B10_Emily,B10,Emily,19.0,12,19.0,10
+B10_Anne,B10,Anne,15.0,7,15.0,12
+B10_Greg,B10,Greg,15.0,9,14.0,11
+B10_Todd,B10,Todd,15.0,10,17.0,14
+B10_Lakisha,B10,Lakisha,15.0,6,16.0,2
+B10_Tamika,B10,Tamika,15.0,13,15.8,6
+B10_Jamal,B10,Jamal,17.0,3,14.5,1
+B10_Darnell,B10,Darnell,17.0,1,16.0,3
+B10_noname,B10,(no name),16.0,11,16.0,5
+C01_Emily,C01,Emily,26.0,7,18.0,1
+C01_Anne,C01,Anne,22.0,11,18.0,9
+C01_Greg,C01,Greg,22.0,15,22.0,5
+C01_Todd,C01,Todd,25.0,1,24.0,3
+C01_Lakisha,C01,Lakisha,16.0,10,23.0,14
+C01_Tamika,C01,Tamika,21.0,14,26.5,10
+C01_Jamal,C01,Jamal,23.5,9,23.5,7
+C01_Darnell,C01,Darnell,25.0,2,17.0,11
+C01_noname,C01,(no name),28.0,5,21.0,12
+C02_Emily,C02,Emily,22.5,7,19.0,6
+C02_Anne,C02,Anne,19.0,12,16.0,5
+C02_Greg,C02,Greg,18.0,15,17.5,8
+C02_Todd,C02,Todd,17.0,11,18.0,4
+C02_Lakisha,C02,Lakisha,16.0,3,17.0,7
+C02_Tamika,C02,Tamika,15.0,10,16.0,14
+C02_Jamal,C02,Jamal,17.5,13,15.0,12
+C02_Darnell,C02,Darnell,15.0,14,16.0,3
+C02_noname,C02,(no name),16.5,6,17.0,2
+C03_Emily,C03,Emily,16.5,13,17.0,14
+C03_Anne,C03,Anne,15.5,10,16.0,5
+C03_Greg,C03,Greg,18.0,8,18.5,10
+C03_Todd,C03,Todd,16.0,6,16.0,11
+C03_Lakisha,C03,Lakisha,20.0,5,16.5,6
+C03_Tamika,C03,Tamika,17.0,1,17.0,8
+C03_Jamal,C03,Jamal,17.0,2,16.0,1
+C03_Darnell,C03,Darnell,17.0,12,17.5,13
+C03_noname,C03,(no name),18.0,9,17.0,3
+C04_Emily,C04,Emily,14.0,8,12.0,15
+C04_Anne,C04,Anne,14.5,9,14.0,7
+C04_Greg,C04,Greg,13.0,1,15.0,14
+C04_Todd,C04,Todd,16.5,7,13.5,1
+C04_Lakisha,C04,Lakisha,16.0,4,17.5,10
+C04_Tamika,C04,Tamika,16.0,2,16.0,2
+C04_Jamal,C04,Jamal,14.0,5,12.0,9
+C04_Darnell,C04,Darnell,16.0,15,16.8,6
+C04_noname,C04,(no name),15.0,14,14.0,12
+C05_Emily,C05,Emily,17.0,2,16.0,14
+C05_Anne,C05,Anne,15.0,10,15.0,3
+C05_Greg,C05,Greg,16.0,8,16.5,13
+C05_Todd,C05,Todd,17.5,9,17.4,6
+C05_Lakisha,C05,Lakisha,15.0,1,17.5,4
+C05_Tamika,C05,Tamika,16.0,3,16.0,8
+C05_Jamal,C05,Jamal,17.0,4,15.0,5
+C05_Darnell,C05,Darnell,15.0,6,16.5,2
+C05_noname,C05,(no name),18.0,5,15.0,11
+C06_Emily,C06,Emily,11.5,11,12.0,2
+C06_Anne,C06,Anne,10.5,7,9.0,9
+C06_Greg,C06,Greg,12.0,4,12.0,11
+C06_Todd,C06,Todd,11.0,14,11.0,15
+C06_Lakisha,C06,Lakisha,12.0,3,11.0,13
+C06_Tamika,C06,Tamika,11.0,8,12.5,1
+C06_Jamal,C06,Jamal,11.0,12,12.0,7
+C06_Darnell,C06,Darnell,12.0,13,10.0,12
+C06_noname,C06,(no name),12.0,15,11.5,10
+C07_Emily,C07,Emily,20.0,15,18.0,12
+C07_Anne,C07,Anne,17.5,6,21.5,4
+C07_Greg,C07,Greg,23.0,2,20.0,14
+C07_Todd,C07,Todd,18.5,11,19.0,5
+C07_Lakisha,C07,Lakisha,20.0,13,17.5,1
+C07_Tamika,C07,Tamika,19.0,4,22.0,15
+C07_Jamal,C07,Jamal,22.0,3,18.0,7
+C07_Darnell,C07,Darnell,21.0,1,18.5,2
+C07_noname,C07,(no name),21.0,12,17.0,9
+C08_Emily,C08,Emily,19.5,9,22.0,12
+C08_Anne,C08,Anne,21.0,5,21.0,8
+C08_Greg,C08,Greg,21.0,7,17.0,1
+C08_Todd,C08,Todd,21.0,3,16.5,2
+C08_Lakisha,C08,Lakisha,18.0,14,22.0,4
+C08_Tamika,C08,Tamika,18.0,10,22.5,10
+C08_Jamal,C08,Jamal,20.0,6,21.0,15
+C08_Darnell,C08,Darnell,19.5,4,19.5,13
+C08_noname,C08,(no name),21.0,8,19.5,6
+C09_Emily,C09,Emily,17.0,6,22.0,7
+C09_Anne,C09,Anne,19.0,3,19.0,15
+C09_Greg,C09,Greg,19.0,12,18.0,8
+C09_Todd,C09,Todd,19.0,13,17.0,5
+C09_Lakisha,C09,Lakisha,18.5,4,15.0,11
+C09_Tamika,C09,Tamika,18.0,2,19.0,4
+C09_Jamal,C09,Jamal,16.0,1,17.5,13
+C09_Darnell,C09,Darnell,17.5,11,18.0,3
+C09_noname,C09,(no name),22.0,15,17.0,9
+C10_Emily,C10,Emily,21.5,11,17.0,11
+C10_Anne,C10,Anne,19.0,14,16.0,15
+C10_Greg,C10,Greg,21.5,13,22.0,10
+C10_Todd,C10,Todd,21.0,9,20.5,13
+C10_Lakisha,C10,Lakisha,23.0,12,17.0,9
+C10_Tamika,C10,Tamika,23.0,5,21.0,4
+C10_Jamal,C10,Jamal,16.5,10,20.0,3
+C10_Darnell,C10,Darnell,19.0,8,20.1,6
+C10_noname,C10,(no name),20.5,7,19.5,8
+D01_Emily,D01,Emily,15.0,2,14.0,9
+D01_Anne,D01,Anne,11.0,6,14.0,2
+D01_Greg,D01,Greg,14.0,11,19.5,4
+D01_Todd,D01,Todd,11.5,9,14.2,6
+D01_Lakisha,D01,Lakisha,13.0,5,12.0,12
+D01_Tamika,D01,Tamika,14.0,10,15.0,14
+D01_Jamal,D01,Jamal,13.0,13,13.0,15
+D01_Darnell,D01,Darnell,16.0,12,13.0,11
+D01_noname,D01,(no name),16.0,1,13.0,8
+D02_Emily,D02,Emily,15.0,4,18.0,2
+D02_Anne,D02,Anne,16.0,3,16.5,8
+D02_Greg,D02,Greg,18.0,9,18.0,14
+D02_Todd,D02,Todd,19.0,5,19.5,10
+D02_Lakisha,D02,Lakisha,16.0,15,16.0,7
+D02_Tamika,D02,Tamika,22.0,7,17.0,5
+D02_Jamal,D02,Jamal,16.0,8,17.0,15
+D02_Darnell,D02,Darnell,16.0,14,18.5,4
+D02_noname,D02,(no name),16.0,6,15.0,11
+D03_Emily,D03,Emily,12.5,6,10.5,13
+D03_Anne,D03,Anne,11.0,1,11.0,14
+D03_Greg,D03,Greg,11.0,5,10.0,9
+D03_Todd,D03,Todd,11.0,7,13.0,7
+D03_Lakisha,D03,Lakisha,10.0,3,12.0,5
+D03_Tamika,D03,Tamika,12.0,12,11.0,1
+D03_Jamal,D03,Jamal,10.0,14,10.5,8
+D03_Darnell,D03,Darnell,11.0,15,10.0,10
+D03_noname,D03,(no name),10.5,11,12.0,3
+D04_Emily,D04,Emily,18.0,3,18.0,3
+D04_Anne,D04,Anne,25.0,5,18.5,13
+D04_Greg,D04,Greg,18.0,11,16.0,11
+D04_Todd,D04,Todd,17.5,10,22.5,4
+D04_Lakisha,D04,Lakisha,18.0,8,18.5,8
+D04_Tamika,D04,Tamika,21.0,14,17.0,15
+D04_Jamal,D04,Jamal,20.0,7,18.5,2
+D04_Darnell,D04,Darnell,18.0,6,17.0,12
+D04_noname,D04,(no name),19.0,9,21.0,14
+D05_Emily,D05,Emily,11.0,13,12.0,11
+D05_Anne,D05,Anne,11.0,4,12.5,6
+D05_Greg,D05,Greg,10.0,14,12.0,13
+D05_Todd,D05,Todd,10.0,15,12.5,2
+D05_Lakisha,D05,Lakisha,12.0,2,13.0,5
+D05_Tamika,D05,Tamika,11.0,1,9.0,4
+D05_Jamal,D05,Jamal,13.0,8,11.0,3
+D05_Darnell,D05,Darnell,10.5,9,11.5,1
+D05_noname,D05,(no name),11.0,10,8.5,10
+D06_Emily,D06,Emily,17.0,14,16.5,13
+D06_Anne,D06,Anne,17.0,15,18.0,10
+D06_Greg,D06,Greg,16.5,4,16.0,5
+D06_Todd,D06,Todd,17.0,8,17.0,3
+D06_Lakisha,D06,Lakisha,20.0,12,16.0,6
+D06_Tamika,D06,Tamika,17.5,11,15.0,11
+D06_Jamal,D06,Jamal,19.0,7,18.5,4
+D06_Darnell,D06,Darnell,19.0,2,15.5,1
+D06_noname,D06,(no name),15.5,13,16.5,7
+D07_Emily,D07,Emily,22.0,9,20.0,5
+D07_Anne,D07,Anne,21.0,6,19.0,12
+D07_Greg,D07,Greg,24.0,5,19.0,2
+D07_Todd,D07,Todd,22.0,12,18.0,15
+D07_Lakisha,D07,Lakisha,18.5,13,23.2,6
+D07_Tamika,D07,Tamika,20.0,8,20.0,9
+D07_Jamal,D07,Jamal,24.0,2,23.5,10
+D07_Darnell,D07,Darnell,19.5,10,21.0,7
+D07_noname,D07,(no name),19.0,4,18.0,1
+D08_Emily,D08,Emily,19.0,1,17.0,15
+D08_Anne,D08,Anne,17.0,11,18.0,12
+D08_Greg,D08,Greg,19.5,13,17.5,8
+D08_Todd,D08,Todd,16.0,14,16.5,1
+D08_Lakisha,D08,Lakisha,21.0,2,19.0,14
+D08_Tamika,D08,Tamika,17.0,3,19.8,6
+D08_Jamal,D08,Jamal,18.0,12,15.0,9
+D08_Darnell,D08,Darnell,17.0,8,19.0,13
+D08_noname,D08,(no name),17.0,10,19.0,7
+D09_Emily,D09,Emily,18.5,10,20.0,3
+D09_Anne,D09,Anne,18.5,4,18.5,1
+D09_Greg,D09,Greg,21.0,15,18.5,13
+D09_Todd,D09,Todd,18.0,1,22.0,2
+D09_Lakisha,D09,Lakisha,21.5,7,22.0,12
+D09_Tamika,D09,Tamika,18.5,6,18.0,9
+D09_Jamal,D09,Jamal,26.0,5,18.0,11
+D09_Darnell,D09,Darnell,18.5,9,20.0,8
+D09_noname,D09,(no name),22.0,3,21.0,15
+D10_Emily,D10,Emily,22.0,12,18.0,5
+D10_Anne,D10,Anne,21.0,13,22.0,14
+D10_Greg,D10,Greg,21.0,1,21.0,6
+D10_Todd,D10,Todd,21.0,4,22.0,12
+D10_Lakisha,D10,Lakisha,21.0,11,25.0,10
+D10_Tamika,D10,Tamika,21.0,15,21.0,3
+D10_Jamal,D10,Jamal,24.0,2,22.0,9
+D10_Darnell,D10,Darnell,24.0,3,21.5,7
+D10_noname,D10,(no name),18.5,7,23.5,4
