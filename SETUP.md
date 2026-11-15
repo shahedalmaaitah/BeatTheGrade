@@ -8,8 +8,8 @@ Open PowerShell and clone this repository:
 
 ```powershell
 cd $HOME\Projects
-git clone https://github.com/YOUR-USERNAME/beat-the-grade.git
-cd beat-the-grade
+git clone https://github.com/YOUR-USERNAME/LoanLens.git
+cd LoanLens
 ```
 
 ## 2. Create the Python environment
