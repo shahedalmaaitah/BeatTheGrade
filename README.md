@@ -108,7 +108,7 @@ Clarification notes added later are dated and appended; the original text is unc
 
 - **Job titles only exist from late 2013.** Before then, LendingClub's job field held employer names. So the job-title results rest on the 40,006 loans issued late 2013–2015 that carry one of the 12 titles.
 - **Approved US borrowers only.** These are LendingClub loans, 36-month terms, issued 2007–2015, priced at 2015 rates. People who were turned down aren't in the data.
-- **One AI model.** All results are for `gemini-3.5-flash-lite`. A second model (`gemma-4-31b-it`) was blocked by repeated server errors after 9 of 23 batches and is not analysed.
+- **One AI model family.** All results are for `gemini-3.5-flash-lite`. A second model (Gemma 4 31B, then Gemini 3.8 Flash) was attempted and blocked by server errors (500/503/504), so the result is tested on one model family only.
 - **The hindsight check.** The main model trained on 2007–2014 loans, some of which hadn't finished by early 2015. Trained only on 2007–2011 loans, all finished in time, its 2015 AUC is 0.631 instead of 0.669, still above FICO alone (0.602).
 - **Deviations from the pre-registration** are listed in notebook 05:
   - all 12 titles were used instead of only the sign-stable 10 (the result is the same);
@@ -119,7 +119,8 @@ Clarification notes added later are dated and appended; the original text is unc
 
 ## AI tools used
 
-- **Claude** (Opus 5.5 and Fable 5.2, through Claude Code and the Claude app) for planning, code and review.
+- **Claude** (Opus 5.5 and Fable 5.2, through Claude Code and the Claude app) for code and review. 
+*No AI tools were used for idea, plan, or method generation.*
 - **The Gemini API** is the system under test.
 
 ## Sources

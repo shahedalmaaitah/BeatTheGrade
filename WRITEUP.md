@@ -34,7 +34,7 @@ Most AI-bias tests only ask whether a protected trait changes the answer. We als
 
 ## What we'd do next
 
-- **More AI models:** our second model was blocked by server errors.
+- **More AI models:** both second-model attempts (Gemma 4 31B and Gemini 3.8 Flash) were blocked by server errors.
 - **The checks we didn't run:** the planned third prompt wording and split-half check.
 - **The fairness cost:** measure it with data that records sex, since job titles can stand in for it.
 
